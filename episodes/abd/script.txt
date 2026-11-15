@@ -1,0 +1,44 @@
+= A B => AB
+= Mister three-sixty => Mr 360
+= ninety mile an hour => 90 mph
+= one day cricket => one-day cricket
+= Thirty one => 31
+= thirty one => 31
+= twenty fifteen => 2015
+= Sixteen => 16
+{title} A B de Villiers. @0.35
+{mr360} They called him | Mister three-sixty, | because he could hit the ball | anywhere. @0.35
+{today} Today, | Gary is going to try his shots. @0.5
+{wrong} What could go wrong? @0.9
+{n5} Number five. @0.25
+The ramp. @0.35
+{n5ab} A fast ball outside off stump, | and A B just lifts it | over the keeper's head | for four. @0.45
+{n5gary} Gary tries it. @0.7
+{n5hit} The ball hits him | on the helmet. @0.5
+{n5not} That's not four. @1.0
+{n4} Number four. @0.25
+The reverse sweep. @0.35
+{n4ab} A B swaps his hands | and sweeps the ball the wrong way, | into a field | with nobody in it. @0.45
+{n4gary} Gary swaps his hands... @0.7
+{n4drop} and drops his bat. @1.0
+{n3} Number three. @0.25
+The scoop. @0.35
+{n3ab} A B drops to one knee | and flicks a ninety mile an hour ball | over his own shoulder. @0.45
+{n3gary} Gary drops to one knee. @0.7
+{n3stay} And stays there. @0.4
+{n3bowled} Bowled. @1.0
+{n2} Number two. @0.25
+The flying catch. @0.35
+{n2ab} A B wasn't just a batter. | He would dive full length | and take catches | nobody else could reach. @0.45
+{n2gary} Gary dives. @0.7
+{n2miss} The ball lands | exactly where he was standing. @1.0
+{n1} And number one. @0.25
+The fastest hundred | in one day cricket. @0.35
+{n1balls} Thirty one balls. @0.35
+{n1where} Johannesburg, | twenty fifteen, | against the West Indies. @0.35
+{n1six} Sixteen sixes | in one innings. @0.5
+{n1gary} Gary also needs | thirty one balls. @0.7
+{n1mark} Just to get off the mark. @1.0
+{outro} So, | can anyone play like A B? @0.45
+{yes} Gary says yes. @0.7
+{no} The scoreboard says no. @1.6

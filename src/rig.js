@@ -38,6 +38,38 @@ const LOOKS = {
     shirt: '#1d7a46', accent: '#c9f06a', trousers: '#1d7a46', skin: '#b97a4c', hair: '#120c08',
     head: 'cap', capColor: '#155c34', pads: true, gloves: '#f1f1ea', bigGloves: true, shoes: '#f4f4f0', sleeve: 'long',
   },
+  abd: {
+    shirt: '#0f7a43', accent: '#f6c531', trousers: '#0f7a43', skin: '#f0c7a0', hair: '#3b2a1c',
+    head: 'helmet', capColor: '#0b5a31', pads: true, gloves: '#f4f4f0', shoes: '#f4f4f0', sleeve: 'long',
+  },
+  abdField: {
+    shirt: '#0f7a43', accent: '#f6c531', trousers: '#0f7a43', skin: '#f0c7a0', hair: '#3b2a1c',
+    head: 'cap', capColor: '#0b5a31', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'short',
+  },
+  kohli: {
+    shirt: '#1f6fd1', accent: '#ff8a1f', trousers: '#1b3f8f', skin: '#c98d62', hair: '#15100c',
+    head: 'helmet', capColor: '#16336e', pads: true, gloves: '#f4f4f0', shoes: '#f4f4f0', sleeve: 'long', beard: true,
+  },
+  kohliCap: {
+    shirt: '#1f6fd1', accent: '#ff8a1f', trousers: '#1b3f8f', skin: '#c98d62', hair: '#15100c',
+    head: 'cap', capColor: '#16336e', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'short', beard: true,
+  },
+  garyField: {
+    shirt: '#1f3a6e', accent: '#f2c230', trousers: '#f4f4f0', skin: '#e9b48a', hair: '#5a3825',
+    head: 'cap', capColor: '#1b3160', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'short',
+  },
+  maroon: {
+    shirt: '#7a1f2b', accent: '#f6c531', trousers: '#7a1f2b', skin: '#6b4430', hair: '#120c08',
+    head: 'cap', capColor: '#5c1520', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'short',
+  },
+  maroonKeeper: {
+    shirt: '#7a1f2b', accent: '#f6c531', trousers: '#7a1f2b', skin: '#5e3b29', hair: '#120c08',
+    head: 'cap', capColor: '#5c1520', pads: true, gloves: '#f1f1ea', bigGloves: true, shoes: '#f4f4f0', sleeve: 'long',
+  },
+  greenKeeper: {
+    shirt: '#1d7a46', accent: '#c9f06a', trousers: '#1d7a46', skin: '#c58c5c', hair: '#18110c',
+    head: 'cap', capColor: '#155c34', pads: true, gloves: '#f1f1ea', bigGloves: true, shoes: '#f4f4f0', sleeve: 'long',
+  },
   umpire: {
     shirt: '#fbfbf7', accent: '#2a2f3a', trousers: '#2b2f38', skin: '#f0c9a4', hair: '#bdbdbd',
     head: 'hat', capColor: '#fbfbf7', pads: false, gloves: null, shoes: '#202020', sleeve: 'long', coat: true,

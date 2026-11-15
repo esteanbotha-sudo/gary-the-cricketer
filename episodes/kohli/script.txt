@@ -1,0 +1,38 @@
+= twenty twenty-two => 2022
+= twenty twenty-three => 2023
+= Fifty one day hundreds => 50 ODI hundreds
+{title} Virat Kohli. @0.35
+{king} The King. @0.45
+One of the greatest batters | of all time. @0.4
+{studied} Gary has studied | every one of his moves. @0.5
+{see} Let's see how it goes. @0.9
+{n5} Number five. @0.25
+The cover drive. @0.35
+{n5vk} Front foot forward, | head over the ball, | and it races through the covers | for four. @0.45
+{n5gary} Gary leans forward... @0.7
+{n5fall} a little too far. @1.0
+{n4} Number four. @0.25
+The chase. @0.35
+{n4vk} Kohli loved chasing a target. | The bigger the total, | the calmer he got. @0.45
+{n4gary} Gary needs six runs | off the last ball. @0.7
+{n4panic} He is not calm. @1.0
+{n3} Number three. @0.25
+The straight six. @0.35
+{n3where} Melbourne, | twenty twenty-two, | against Pakistan. @0.35
+{n3vk} Haris Rauf bowls it fast, | and Kohli hits it straight back | over his head for six, | off the back foot. @0.45
+{n3gary} Gary tries it | off the back foot. @0.7
+{n3fall} He falls onto his stumps. @0.35
+{n3hw} Hit wicket. @1.0
+{n2} Number two. @0.25
+Fitness. @0.35
+{n2vk} Kohli changed Indian cricket | by training like an athlete. @0.45
+{n2gary} Gary does one push up. @0.7
+{n2rest} Then he has a little rest. @1.0
+{n1} And number one. @0.25
+{n1name} Fifty one day hundreds. @0.35
+{n1vk} At the twenty twenty-three World Cup semi-final | in Mumbai, | Kohli scored his fiftieth, | passing Sachin Tendulkar's record. @0.5
+{n1gary} Gary has also | scored a hundred. @0.7
+{n1career} Over his whole career. @1.0
+{outro} So, | what makes Virat special? @0.45
+{work} Hard work, | every single day. @0.7
+{tomorrow} Gary is starting tomorrow. @1.6

@@ -90,3 +90,125 @@ function fieldBase(ctx, t, cheer = 0) {
   drawPitch(ctx);
 }
 
+
+// ---------- extra helpers for the player episodes ----------
+// Piecewise ball path: keys = [[t, x, y, arc?], ...] (arc = upward bulge for the segment ending at that key)
+function pathOf(keys, hold = false) {
+  return t => {
+    if (t < keys[0][0]) return null;
+    for (let i = 1; i < keys.length; i++) {
+      if (t <= keys[i][0]) {
+        const [t0, x0, y0] = keys[i - 1], [t1, x1, y1, arc = 0] = keys[i];
+        const u = (t - t0) / (t1 - t0);
+        return { x: lerp(x0, x1, u), y: lerp(y0, y1, u) - Math.sin(u * Math.PI) * arc };
+      }
+    }
+    if (!hold) return null;
+    const k = keys[keys.length - 1]; return { x: k[1], y: k[2] };
+  };
+}
+
+// name tag above a character
+function nameTag(ctx, t, t0, t1, x, y, text, bg = COL.yellow, fg = COL.ink) {
+  const s = popScale(t, t0, t1, 0.3, 0.2); if (s <= 0) return;
+  ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
+  ctx.font = font(900, 26, F_TITLE); const tw = ctx.measureText(text).width + 30;
+  ctx.fillStyle = bg; rrect(ctx, -tw / 2, -20, tw, 40, 12); ctx.fill(); ctx.strokeStyle = COL.ink; ctx.lineWidth = 3; ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(-9, 19); ctx.lineTo(0, 32); ctx.lineTo(9, 19); ctx.closePath(); ctx.fillStyle = bg; ctx.fill(); ctx.stroke();
+  ctx.fillRect(-8, 15, 16, 6);
+  ctx.fillStyle = fg; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(text, 0, 2);
+  ctx.restore();
+}
+
+// big banner for the "GARY'S TURN" half of each segment
+function turnBanner(ctx, t, t0, text = "GARY'S TURN") {
+  const k = prog(t0 - 0.05, t0 + 0.35, t), out = prog(t0 + 1.4, t0 + 1.8, t);
+  if (k <= 0 || out >= 1) return;
+  const x = lerp(-700, 960, Ease.out3(k)) + lerp(0, 2600, Ease.in(out));
+  ctx.save(); ctx.translate(x, 300); ctx.rotate(-4 * DEG);
+  ctx.fillStyle = COL.navy; rrect(ctx, -330, -62, 660, 124, 20); ctx.fill();
+  ctx.strokeStyle = COL.yellow; ctx.lineWidth = 8; ctx.stroke();
+  ctx.font = font(900, 84, F_TITLE); ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  ctx.fillStyle = COL.yellow; ctx.fillText(text, 0, 6);
+  ctx.restore();
+}
+
+// rounded info panel with rows of [label, value] and optional highlight colour per row
+function scoreboard(ctx, t, t0, t1, x, y, title, rows, opts = {}) {
+  const s = popScale(t, t0, t1, 0.35, 0.2); if (s <= 0) return;
+  const w = opts.w || 520, rh = opts.rh || 64, h = 76 + rows.length * rh;
+  ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
+  ctx.fillStyle = 'rgba(0,0,0,0.2)'; rrect(ctx, -w / 2 + 8, 10, w, h, 18); ctx.fill();
+  ctx.fillStyle = '#14223f'; rrect(ctx, -w / 2, 0, w, h, 18); ctx.fill();
+  ctx.strokeStyle = COL.yellow; ctx.lineWidth = 5; ctx.stroke();
+  ctx.font = font(900, 30, F_TITLE); ctx.textAlign = 'center'; ctx.fillStyle = COL.yellow; ctx.fillText(title, 0, 46);
+  rows.forEach(([lab, val, col], i) => {
+    const yy = 76 + i * rh + rh * 0.62;
+    ctx.textAlign = 'left'; ctx.font = font(700, 30, F_TITLE); ctx.fillStyle = 'rgba(255,255,255,0.75)'; ctx.fillText(lab, -w / 2 + 34, yy);
+    ctx.textAlign = 'right'; ctx.font = font(900, 46, F_TITLE); ctx.fillStyle = col || '#fff'; ctx.fillText(String(val), w / 2 - 34, yy + 4);
+  });
+  ctx.restore();
+}
+
+function dizzy(ctx, t, x, y, a = 1) {
+  if (a <= 0) return;
+  ctx.save(); ctx.globalAlpha = a;
+  for (let i = 0; i < 4; i++) {
+    const ang = t * 5 + i * Math.PI / 2;
+    starPath(ctx, x + Math.cos(ang) * 46, y + Math.sin(ang) * 14, 11, 5);
+    ctx.fillStyle = COL.yellow; ctx.fill(); ctx.strokeStyle = '#b8860b'; ctx.lineWidth = 2; ctx.stroke();
+  }
+  ctx.restore();
+}
+
+function sweat(ctx, t, x, y, a = 1) {
+  if (a <= 0) return;
+  ctx.save(); ctx.globalAlpha = a;
+  for (let i = 0; i < 3; i++) {
+    const ph = (t * 1.8 + i / 3) % 1;
+    const sx = x + (i - 1) * 26, sy = y + ph * 40;
+    ctx.globalAlpha = a * (1 - ph);
+    ctx.fillStyle = '#7cc4ff'; ctx.strokeStyle = '#2a6fb0'; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(sx, sy - 12); ctx.quadraticCurveTo(sx + 9, sy + 2, sx, sy + 6); ctx.quadraticCurveTo(sx - 9, sy + 2, sx, sy - 12); ctx.fill(); ctx.stroke();
+  }
+  ctx.restore();
+}
+
+// kneeling batter pose generator (local coords, facing +x)
+function kneel(o = {}) {
+  return mix({ hip: { x: -8, y: -96 }, lean: 12, head: -10, fF: { x: 52, y: -8 }, fB: { x: -58, y: -14 }, toeB: 70, face: { mouth: 'flat', brow: 0.5, look: 0.6 } }, o, 1);
+}
+
+// push-up / lying poses. Returns {pose, Y} where Y is the origin y to draw at (body horizontal, facing +x)
+function plank(hipH, o = {}) {
+  const pose = mix({
+    hip: { x: 0, y: -160 }, rot: 90, lean: 0, head: -10,
+    fF: { x: hipH, y: -2 }, fB: { x: hipH - 4, y: -10 },
+    hF: { x: hipH + 4, y: -96 }, hB: { x: hipH, y: -88 }, eF: -1, eB: -1, toeF: -90, toeB: -90,
+    face: { mouth: 'flat', brow: 0.4, look: 0.8 },
+  }, o, 1);
+  return { pose, Y: GY - hipH + 160 };
+}
+
+// simple top-down field inset showing fielders and a shot line
+function fieldInset(ctx, t, t0, t1, x, y, r, fielders, shotAng, shotT, label) {
+  const s = popScale(t, t0, t1, 0.35, 0.2); if (s <= 0) return;
+  ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
+  ctx.fillStyle = 'rgba(0,0,0,0.2)'; ctx.beginPath(); ctx.arc(6, 8, r + 10, 0, 7); ctx.fill();
+  ctx.fillStyle = '#7fbf5a'; ctx.beginPath(); ctx.arc(0, 0, r + 10, 0, 7); ctx.fill();
+  ctx.strokeStyle = '#fff'; ctx.lineWidth = 4; ctx.beginPath(); ctx.arc(0, 0, r, 0, 7); ctx.stroke();
+  ctx.fillStyle = COL.pitch; ctx.fillRect(-9, -40, 18, 80);
+  for (const [a, d] of fielders) { ctx.fillStyle = '#7a1f2b'; ctx.strokeStyle = '#fff'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(Math.cos(a) * r * d, Math.sin(a) * r * d, 9, 0, 7); ctx.fill(); ctx.stroke(); }
+  ctx.fillStyle = '#1f3a6e'; ctx.beginPath(); ctx.arc(0, 30, 8, 0, 7); ctx.fill();
+  const k = Ease.out3(prog(shotT, shotT + 0.8, t));
+  if (k > 0) {
+    ctx.strokeStyle = COL.red; ctx.lineWidth = 6; ctx.setLineDash([12, 8]);
+    ctx.beginPath(); ctx.moveTo(0, 30); ctx.lineTo(Math.cos(shotAng) * r * k, 30 + (Math.sin(shotAng) * r - 30) * k); ctx.stroke(); ctx.setLineDash([]);
+    drawBall(ctx, Math.cos(shotAng) * r * k, 30 + (Math.sin(shotAng) * r - 30) * k, 9, t * 10);
+  }
+  if (label && t > shotT + 0.6) { ctx.font = font(900, 34, F_TITLE); ctx.textAlign = 'center'; textOutlined(ctx, label, Math.cos(shotAng) * r * 0.55, Math.sin(shotAng) * r * 0.55 - 10, COL.yellow, COL.ink, 7); }
+  ctx.restore();
+}
+
+// generic "four" / "six" signal by the umpire
+const P_UMP_FOUR = (t) => ({ hip: { x: 0, y: -162 }, lean: 0, fF: { x: 16, y: -8 }, fB: { x: -14, y: -8 }, hF: { x: 90 + Math.sin(t * 9) * 40, y: -250 }, hB: { x: 22, y: -170 }, eF: -1, eB: -1, face: { mouth: 'smile', look: 0.4 } });
