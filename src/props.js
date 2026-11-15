@@ -220,7 +220,6 @@ function drawHUD(ctx, t, num, title, opts = {}) {
 }
 
 // Counter of how many times Gary got out (values change at given times)
-const OUT_TIMES = [16.4, 36.08, 57.15, 72.45, 82.42];
 function drawCounter(ctx, t, alpha = 1) {
   if (alpha <= 0) return;
   let n = 0, last = -10;
@@ -232,7 +231,7 @@ function drawCounter(ctx, t, alpha = 1) {
   ctx.fillStyle = '#fff'; rrect(ctx, x, y, w, h, 14); ctx.fill();
   ctx.strokeStyle = COL.ink; ctx.lineWidth = 3; ctx.stroke();
   ctx.font = font(900, 19, F_TITLE); ctx.fillStyle = '#5b6170'; ctx.textAlign = 'center';
-  ctx.fillText('TIMES GARY OUT TODAY', x + w / 2, y + 28);
+  ctx.fillText(typeof COUNTER_LABEL !== 'undefined' ? COUNTER_LABEL : 'TIMES GARY OUT TODAY', x + w / 2, y + 28);
   ctx.save(); ctx.translate(x + w / 2, y + 74); ctx.scale(pop, pop);
   ctx.font = font(900, 54, F_TITLE); ctx.fillStyle = COL.red; ctx.fillText(String(n), 0, 0);
   ctx.restore();
@@ -251,7 +250,7 @@ function drawCounter(ctx, t, alpha = 1) {
 function drawCaptions(ctx, t) {
   let cur = null, idx = -1;
   for (let i = 0; i < CAPTIONS.length; i++) {
-    const c = CAPTIONS[i], end = i + 1 < CAPTIONS.length ? CAPTIONS[i + 1][0] : 114.0;
+    const c = CAPTIONS[i], end = i + 1 < CAPTIONS.length ? CAPTIONS[i + 1][0] : DURATION - 0.25;
     if (t >= c[0] && t < end) { cur = c; idx = i; break; }
   }
   if (!cur) return;

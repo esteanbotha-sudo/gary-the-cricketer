@@ -23,21 +23,22 @@
   <button id="play">▶ Play / Pause</button>
   <input id="seek" type="range" min="0" max="114.25" step="0.01" value="0">
   <span id="time">0.00</span>s
-  <audio id="aud" src="audio/narration.m4a" preload="auto"></audio>
+  <audio id="aud" preload="auto"></audio>
 </div>
-<script src="src/core.js"></script>
-<script src="src/rig.js"></script>
-<script src="src/props.js"></script>
-<script src="src/captions.js"></script>
-<script src="src/scenes.js"></script>
-<script src="src/main.js"></script>
+<script>
+  // Load shared engine + the chosen episode (?ep=wickets | abd | kohli)
+  const EP = new URLSearchParams(location.search).get('ep') || 'wickets';
+  document.getElementById('aud').src = `episodes/${EP}/mix.m4a`;
+  window.loaded = ['src/core.js', 'src/rig.js', 'src/props.js', 'src/kit.js', `episodes/${EP}/captions.js`, `episodes/${EP}/scenes.js`, 'src/main.js']
+    .reduce((p, f) => p.then(() => new Promise((res, rej) => { const s = document.createElement('script'); s.src = f; s.onload = res; s.onerror = () => rej(f); document.body.appendChild(s); })), Promise.resolve());
+</script>
 <script>
   // Preview player (not used by the renderer)
   if (location.search.includes('render')) document.body.classList.add('render');
   const aud = document.getElementById('aud'), seek = document.getElementById('seek'), tl = document.getElementById('time');
   let playing = false;
   document.getElementById('play').onclick = () => { playing = !playing; if (playing) aud.play(); else aud.pause(); };
-  seek.oninput = () => { aud.currentTime = +seek.value; renderFrame(+seek.value); tl.textContent = (+seek.value).toFixed(2); };
+  seek.oninput = () => { seek.max = window.DURATION || 120; aud.currentTime = +seek.value; renderFrame(+seek.value); tl.textContent = (+seek.value).toFixed(2); };
   (function loop() { if (playing) { const t = aud.currentTime; renderFrame(t); seek.value = t; tl.textContent = t.toFixed(2); } requestAnimationFrame(loop); })();
 </script>
 </body>

@@ -2,3 +2,7 @@ node_modules/
 output/.parts/
 output/test.mp4
 output/draft.mp4
+episodes/*/.st_tmp/
+output/.parts-*/
+output/.st_tmp/
+__pycache__/
