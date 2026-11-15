@@ -301,7 +301,7 @@ function sDirect(ctx, t) {
   impactBurst(ctx, t, D4.hit, 1664, GY - 70, 1.5);
   // bubbles + labels
   speech(ctx, t, 31.4, 33.1, gx - 20, GY - 330, 'YES! RUN!', { dx: -40 });
-  speech(ctx, t, 32.6, 47.0, partnerX + 30, GY - 330, 'NO!!', { dx: 30 });
+  speech(ctx, t, 32.6, 36.0, partnerX + 30, GY - 330, 'NO!!', { dx: 30 });
   const tipX = gx + 70 + Math.sin(72 * DEG) * (L.bat - 8);
   dimLine(ctx, t, 37.1, 46.9, tipX, CREASE_G, GY - 64, 'MILES SHORT');
   ctx.restore();
