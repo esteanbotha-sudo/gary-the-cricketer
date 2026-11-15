@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Gary: The Best Wickets</title>
+<style>
+  @font-face { font-family: 'Fira Sans Condensed'; font-weight: 900; src: url(fonts/fira-sans-condensed-latin-900-normal.woff2) format('woff2'); }
+  @font-face { font-family: 'Fira Sans Condensed'; font-weight: 700; src: url(fonts/fira-sans-condensed-latin-700-normal.woff2) format('woff2'); }
+  @font-face { font-family: 'Baloo 2'; font-weight: 800; src: url(fonts/baloo-2-latin-800-normal.woff2) format('woff2'); }
+  @font-face { font-family: 'Patrick Hand'; font-weight: 400; src: url(fonts/patrick-hand-latin-400-normal.woff2) format('woff2'); }
+  @font-face { font-family: 'Permanent Marker'; font-weight: 400; src: url(fonts/permanent-marker-latin-400-normal.woff2) format('woff2'); }
+  html, body { margin: 0; background: #111; }
+  canvas { display: block; width: 100vw; max-width: 1920px; height: auto; margin: 0 auto; }
+  body.render canvas { width: 1920px; max-width: none; }
+  #ui { color: #ddd; font: 14px sans-serif; text-align: center; padding: 8px; }
+  body.render #ui { display: none; }
+  #ui input { width: 60%; vertical-align: middle; }
+</style>
+</head>
+<body>
+<canvas id="c" width="1920" height="1080"></canvas>
+<div id="ui">
+  <button id="play">▶ Play / Pause</button>
+  <input id="seek" type="range" min="0" max="114.25" step="0.01" value="0">
+  <span id="time">0.00</span>s
+  <audio id="aud" src="audio/narration.m4a" preload="auto"></audio>
+</div>
+<script src="src/core.js"></script>
+<script src="src/rig.js"></script>
+<script src="src/props.js"></script>
+<script src="src/captions.js"></script>
+<script src="src/scenes.js"></script>
+<script src="src/main.js"></script>
+<script>
+  // Preview player (not used by the renderer)
+  if (location.search.includes('render')) document.body.classList.add('render');
+  const aud = document.getElementById('aud'), seek = document.getElementById('seek'), tl = document.getElementById('time');
+  let playing = false;
+  document.getElementById('play').onclick = () => { playing = !playing; if (playing) aud.play(); else aud.pause(); };
+  seek.oninput = () => { aud.currentTime = +seek.value; renderFrame(+seek.value); tl.textContent = (+seek.value).toFixed(2); };
+  (function loop() { if (playing) { const t = aud.currentTime; renderFrame(t); seek.value = t; tl.textContent = t.toFixed(2); } requestAnimationFrame(loop); })();
+</script>
+</body>
+</html>

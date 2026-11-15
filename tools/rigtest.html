@@ -1,0 +1,15 @@
+<!doctype html><html><head><meta charset="utf-8"><style>body{margin:0;background:#eee}</style></head><body>
+<canvas id="c" width="1920" height="1080"></canvas>
+<script src="../src/core.js"></script><script src="../src/rig.js"></script>
+<script>
+const ctx=document.getElementById('c').getContext('2d');
+ctx.fillStyle='#f3efe6';ctx.fillRect(0,0,1920,1080);ctx.fillStyle='#9fc77a';ctx.fillRect(0,840,1920,240);
+drawPerson(ctx,200,838,1,{hF:{x:18,y:-170},hB:{x:14,y:-172}},'umpire');
+drawPerson(ctx,450,838,1,cyclePose(130),'bowler');
+drawPerson(ctx,700,838,1,{hip:{x:10,y:-155},lean:25,fF:{x:55,y:-8},fB:{x:-40,y:-20},hB:{x:20,y:-365},hF:{x:-30,y:-200},face:{mouth:'open',eye:'wide'}},'bowler');
+drawPerson(ctx,1000,838,1,{hF:{x:-10,y:-380},hB:{x:14,y:-380},eF:1,eB:1,face:{mouth:'grin',eye:'happy'}},'fielder');
+drawPerson(ctx,1300,838,-1,{hip:{x:-4,y:-146},lean:16,head:-10,fF:{x:24,y:-8},fB:{x:-26,y:-8},bat:{a:-10},grip:{x:14,y:-138}},'gary');
+drawPerson(ctx,1560,838,-1,{hip:{x:-6,y:-150},lean:-4,fF:{x:20,y:-8},fB:{x:-20,y:-8},bat:{a:200},grip:{x:10,y:-300},eF:1,eB:1,face:{mouth:'grin'}},'gary');
+drawPerson(ctx,1780,838,-1,{hip:{x:0,y:-95},lean:35,head:-25,fF:{x:30,y:-8},fB:{x:-30,y:-8},hF:{x:50,y:-110},hB:{x:45,y:-100}},'keeper');
+drawPersonFront(ctx,960,500,{hL:{x:-70,y:-205},hR:{x:70,y:-205},shrug:6},'garyCap',0.9);
+</script></body></html>
