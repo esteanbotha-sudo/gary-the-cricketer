@@ -319,7 +319,7 @@ def main():
           '[1:a]volume=1.12[m];'
           '[m][sc]sidechaincompress=threshold=0.06:ratio=3.5:attack=60:release=500:makeup=1[md];'
           '[2:a]volume=1.0[fx];'
-          '[v][md][fx]amix=inputs=3:duration=first:normalize=0,alimiter=limit=0.88,volume=0.78[o]')
+          '[v][md][fx]amix=inputs=3:duration=longest:normalize=0,alimiter=limit=0.88,volume=0.78[o]')
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', narr, '-i', f'{tmp}/music.wav', '-i', f'{tmp}/bed.wav',
                     '-filter_complex', fc, '-map', '[o]', '-t', str(dur), '-c:a', 'aac', '-b:a', '192k', out], check=True)
     print('wrote', out)

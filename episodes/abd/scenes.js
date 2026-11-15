@@ -312,7 +312,7 @@ function s1A(ctx, t) {
   drawPerson(ctx, 1776, GY, -1, t > H1.s ? mix(P.keeper, { hip: { x: 0, y: -150 }, lean: 0, head: 10, hF: { x: 6, y: -318 }, hB: { x: -14, y: -320 }, eF: 1, eB: 1, face: { mouth: 'open', eye: 'wide', brow: -0.8 } }, 1) : keeperIdle(t), 'maroonKeeper');
   if (inMont) pill(ctx, t, H1.s, H1.e, 960, 150, '⏩  FAST FORWARD');
   const runs = Math.min(100, Math.round(n / 31 * 100));
-  scoreboard(ctx, t, T.n1 + 0.5, T.n1gary + 0.1, 1430, 150, 'AB DE VILLIERS', [['BALLS', n], ['RUNS', runs + (n >= 31 ? '!' : ''), n >= 31 ? COL.yellow : '#fff']], { w: 440 });
+  scoreboard(ctx, t, T.n1 + 0.5, T.n1gary + 0.1, 1590, 150, 'AB DE VILLIERS', [['BALLS', n], ['RUNS', runs + (n >= 31 ? '!' : ''), n >= 31 ? COL.yellow : '#fff']], { w: 400 });
   // sixteen sixes
   if (t > T.n1six) {
     const m = clamp(Math.floor((t - T.n1six) / 0.12) + 1, 0, 16);
@@ -352,7 +352,7 @@ function s1B(ctx, t) {
   if (t > e && t < T.n1mark) { ctx.font = font(400, 44, F_HAND); ctx.textAlign = 'center'; textOutlined(ctx, 'z z z', UMP_X + 40, GY - 420 - Math.sin(t * 3) * 8, '#2b4a8a', '#fff', 6); }
   if (t > s && t < e) pill(ctx, t, s, e, 960, 150, '⏩  FAST FORWARD');
   const runs = t > T.n1mark + 0.6 ? 1 : 0;
-  scoreboard(ctx, t, T.n1gary + 0.2, 99, 1430, 150, 'GARY', [['BALLS', n], ['RUNS', runs, runs ? COL.yellow : COL.red]], { w: 440 });
+  scoreboard(ctx, t, T.n1gary + 0.2, 99, 1590, 150, 'GARY', [['BALLS', n], ['RUNS', runs, runs ? COL.yellow : COL.red]], { w: 440 });
   speech(ctx, t, T.n1mark + 1.0, 99, gx - 20, GY - 420, 'OFF THE MARK!', { dx: -40 });
   if (t > T.n1mark + 1.0) for (let i = 0; i < 30; i++) { const r = rng(i + 50); const d = t - T.n1mark - 1.0; const x = gx + (r() - 0.5) * 500, y = GY - 600 + d * 200 * (0.5 + r()) + Math.sin(d * 4 + i) * 10; ctx.fillStyle = ['#e2283c', '#f6c531', '#2f9e5b', '#3b6fc4'][i % 4]; ctx.fillRect(x, y, 10, 6); }
   turnBanner(ctx, t, T.n1gary);
