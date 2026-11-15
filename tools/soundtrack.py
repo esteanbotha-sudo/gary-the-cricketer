@@ -97,64 +97,104 @@ def place(buf, x, t, g=1.0):
     buf[i:i + j1 - j0] += x[j0:j1] * g
 
 # ---------------- music ----------------
+def powerchord(m, dur):
+    """Overdriven saw power chord (root + fifth + octave)."""
+    n = int(dur * SR); t = np.arange(n) / SR
+    x = np.zeros(n)
+    for mm, g in [(m, 1), (m + 7, 0.8), (m + 12, 0.6)]:
+        f = midi(mm)
+        for det in (-0.004, 0.004):
+            ph = 2 * np.pi * f * (1 + det) * t
+            x += g * sum(np.sin(k * ph) / k for k in range(1, 9))
+    x = np.tanh(x * 0.9) * env_adsr(n, 0.004, 0.15, 0.7, 0.06)
+    return lp(x, 3200) * 0.35
+
+def snare():
+    n = int(0.3 * SR); t = np.arange(n) / SR
+    body = np.sin(2 * np.pi * 190 * t) * np.exp(-t * 30)
+    return (bp(rng.normal(0, 1, n), 1500, 9000) * np.exp(-t * 18) * 0.8 + body * 0.6) * 0.7
+
+def hat(open_=False):
+    n = int((0.25 if open_ else 0.05) * SR); t = np.arange(n) / SR
+    return bp(rng.normal(0, 1, n), 7000, 16000) * np.exp(-t * (12 if open_ else 80)) * 0.3
+
+def crash():
+    n = int(2.0 * SR); t = np.arange(n) / SR
+    return bp(rng.normal(0, 1, n), 3000, 15000) * np.exp(-t * 2.2) * 0.35
+
 def music(dur, sections):
-    bpm = 112; beat = 60 / bpm; bar = 4 * beat
-    out = np.zeros((2, int((dur + 2) * SR)))
+    bpm = 140; beat = 60 / bpm; bar = 4 * beat
+    out = np.zeros((2, int((dur + 3) * SR)))
     L, R = out
     prog = [(55, [67, 71, 74]), (62, [66, 69, 74]), (52, [67, 71, 76]), (60, [67, 72, 76])]  # G D Em C
     hook = [(0, 79, 1), (1, 83, 1), (2, 86, 1.5), (3.5, 83, .5), (4, 84, 1), (5, 88, 1), (6, 86, 2),
             (8, 83, 1), (9, 86, 1), (10, 91, 1.5), (11.5, 90, .5), (12, 88, 1), (13, 84, 1), (14, 86, 2)]
+    S = [(st, mm) for st, mm in sections]
     def mode_at(t):
-        m = sections[0][1]
-        for st, mm in sections:
+        m = S[0][1]
+        for st, mm in S:
             if t >= st: m = mm
         return m
+    starts = [st for st, _ in S[1:]]
+    both = lambda x, t, g, w=0.0: (place(L, x, t, g), place(R, x, t + w, g))
     nbars = int(dur / bar) + 1
+    PC = {}
     for b in range(nbars):
         t0 = b * bar
         mode = mode_at(t0 + 0.01)
         root, chord = prog[b % 4]
-        if mode == 'tense':
-            for k in range(8): place(L, bass(root - 12 + (0 if k % 2 == 0 else 12), beat * 0.45), t0 + k * beat / 2, 0.35); place(R, bass(root - 12, beat * 0.45), t0 + k * beat / 2, 0.35)
-            for k in range(16): place(L, shaker(), t0 + k * beat / 4, 0.6 if k % 4 == 0 else 0.3); place(R, shaker(), t0 + k * beat / 4 + 0.01, 0.3)
-            if b % 2 == 0: place(L, pluck_c(chord[0] + 12, 1.5), t0, 0.2); place(R, pluck_c(chord[2] + 12, 1.5), t0 + beat * 2, 0.2)
+        nxt_change = any(t0 + bar <= st < t0 + 2 * bar for st in starts)
+        if mode == 'tense':  # pulsing heartbeat tension
+            for k in range(16):
+                both(bass(root - 12, beat * 0.22), t0 + k * beat / 4, 0.42 if k % 4 == 0 else 0.25)
+                place(L if k % 2 else R, hat(), t0 + k * beat / 4, 0.5)
+            for k in (0, 1.75, 2.5): both(kick(), t0 + k * beat, 0.6)
+            if b % 2 == 1:  # tension riser over two bars
+                n = int(bar * SR); tt = np.arange(n) / SR
+                r = bp(rng.normal(0, 1, n), 800, 6000) * (tt / bar) ** 2 * 0.25
+                both(r, t0, 1)
             continue
         lite = mode in ('intro', 'lite', 'outro')
-        # arpeggio plucks (8ths) panned
-        pat = [0, 1, 2, 1, 0, 2, 1, 2]
+        # driving 8th-note pluck riff
+        pat = [0, 2, 1, 2, 0, 2, 1, 2]
         for k in range(8):
-            m = chord[pat[k]] + (12 if k in (2, 5) else 0)
-            g = 0.32 if k % 2 == 0 else 0.24
-            pan = 0.35 + 0.3 * (k % 2)
-            x = pluck_c(m, beat * 1.2)
-            place(L, x, t0 + k * beat / 2, g * (1 - pan) * 1.6); place(R, x, t0 + k * beat / 2, g * pan * 1.6)
-        # bass
-        bl = [(0, root - 12, 1.4), (1.5, root, 0.4), (2, root - 12, 1.0), (3, root - 5, 0.9)]
-        for bt, m, d in bl:
-            x = bass(m, beat * d); place(L, x, t0 + bt * beat, 0.42); place(R, x, t0 + bt * beat, 0.42)
-        # drums
+            x = pluck_c(chord[pat[k]] + 12, beat * 0.8)
+            place(L, x, t0 + k * beat / 2, 0.3); place(R, x, t0 + k * beat / 2 + 0.008, 0.22)
+        # pumping offbeat octave bass
+        for k in range(8):
+            m = root - 12 if k % 2 == 0 else root
+            both(bass(m, beat * 0.42), t0 + k * beat / 2, 0.5 if not lite else 0.35)
+        # drums: four-on-the-floor kick, backbeat snare, 16th hats
         for k in range(4):
-            if not lite or k % 2 == 0:
-                place(L, kick(), t0 + k * beat, 0.55 if k % 2 == 0 else 0.35); place(R, kick(), t0 + k * beat, 0.55 if k % 2 == 0 else 0.35)
-            if k % 2 == 1 and not (mode == 'intro'):
-                c = clap(); place(L, c, t0 + k * beat, 0.5); place(R, c, t0 + k * beat + 0.006, 0.5)
+            both(kick(), t0 + k * beat, 0.75 if not lite else 0.5)
+            if k % 2 == 1: both(snare(), t0 + k * beat, 0.7 if not lite else 0.45, 0.004)
         for k in range(16):
-            g = (0.5 if k % 2 else 0.8) * (0.5 if lite else 1)
-            place(L if k % 2 else R, shaker(), t0 + k * beat / 4, g)
-        if not lite:  # tabla fills for subcontinent flavour
-            for bt, m in [(2.5, 62), (2.75, 67), (3.5, 60), (3.75, 64)]:
-                if b % 2 == 1: place(L, tabla(m), t0 + bt * beat, 0.35); place(R, tabla(m), t0 + bt * beat, 0.3)
-        # stadium-trumpet hook every other 4-bar phrase
-        if mode == 'full' and (b // 4) % 2 == 1:
+            place(L if k % 2 else R, hat(open_=(k % 4 == 2 and not lite)), t0 + k * beat / 4, (0.7 if k % 2 else 0.45) * (0.6 if lite else 1))
+        if b % 4 == 0 and not lite: both(crash(), t0, 0.9)
+        if not lite:
+            # power-chord stabs on the off-beats
+            if root not in PC: PC[root] = powerchord(root - 12, beat * 0.45)
+            for bt in (0, 1.5, 3):
+                both(PC[root], t0 + bt * beat, 0.55, 0.01)
+            # tabla flourish
+            if b % 2 == 1:
+                for bt, m in [(3.0, 62), (3.25, 67), (3.5, 60), (3.75, 64)]: both(tabla(m), t0 + bt * beat, 0.4)
+        # stadium-trumpet hook through every full phrase
+        if mode in ('full', 'hype'):
             ph = (b % 4) * 4
             for st, m, d in hook:
                 if ph <= st < ph + 4:
                     x = trumpet(m, d * beat * 0.95)
-                    place(L, x, t0 + (st - ph) * beat, 0.30); place(R, x, t0 + (st - ph) * beat + 0.012, 0.26)
-    # final chord at the end
-    end = dur - 2.2
-    for m in [55, 67, 71, 74, 79]:
-        x = pluck_c(m, 2.5); place(L, x, end, 0.35); place(R, x, end + 0.01, 0.35)
+                    place(L, x, t0 + (st - ph) * beat, 0.34); place(R, x, t0 + (st - ph) * beat + 0.012, 0.3)
+        # snare roll fill into the next section change
+        if nxt_change:
+            for k in range(16):
+                both(snare(), t0 + 3 * beat + k * beat / 16 * 4 / 4, 0.2 + 0.5 * k / 16)
+    # big ending: chord + crash
+    end = dur - 2.4
+    for m in [43, 55, 62, 67, 71]:
+        x = pluck_c(m + 12, 2.5); both(x, end, 0.35)
+    both(powerchord(43, 2.0), end, 0.6); both(crash(), end, 1.0); both(kick(), end, 1.0)
     return out[:, :int(dur * SR)]
 
 # ---------------- crowd + sfx ----------------
@@ -169,7 +209,7 @@ def crowd_bed(dur):
     return np.stack([x * mod, y * mod]) * 0.035
 
 def cheer(big=False):
-    d = 4.5 if big else 3.2; n = int(d * SR); t = np.arange(n) / SR
+    d = 5.5 if big else 3.6; n = int(d * SR); t = np.arange(n) / SR
     e = np.clip(t / 0.18, 0, 1) * np.exp(-np.maximum(t - 0.4, 0) / (1.6 if big else 1.1))
     voice = bp(noise(n), 400, 3500) * (1 + 0.3 * np.sin(2 * np.pi * 3 * t))
     claps = np.zeros(n)
@@ -177,7 +217,7 @@ def cheer(big=False):
         i = rng.integers(0, n - 2000); k = clap()[:1500] * rng.uniform(0.2, 1)
         claps[i:i + 1500] += k
     x = (voice * 0.5 + bp(claps, 800, 6000) * 0.12) * e
-    return x * (0.5 if big else 0.36)
+    return x * (0.7 if big else 0.5)
 
 def groan():
     n = int(2.2 * SR); t = np.arange(n) / SR
@@ -221,6 +261,17 @@ def sfx(name):
     if name == 'ding':
         n = int(0.9 * SR); t = np.arange(n) / SR
         return (np.sin(2 * np.pi * 1318 * t) + 0.4 * np.sin(2 * np.pi * 2636 * t)) * np.exp(-t * 5) * 0.22
+    if name == 'riser':  # 1.6 s build that peaks at the cue time (placed early in main)
+        n = int(1.6 * SR); t = np.arange(n) / SR
+        x = bp(noise(n), 600, 9000) * (t / 1.6) ** 2.5
+        f = 200 + 1400 * (t / 1.6) ** 2
+        x += np.sin(2 * np.pi * np.cumsum(f) / SR) * (t / 1.6) ** 2 * 0.3
+        return x * 0.5
+    if name == 'hit':  # cinematic impact
+        n = int(2.2 * SR); t = np.arange(n) / SR
+        f = 45 + 80 * np.exp(-t * 12)
+        sub = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 2.5)
+        return (sub * 0.9 + bp(noise(n), 200, 6000) * np.exp(-t * 10) * 0.6 + np.pad(crash(), (0, max(0, n - int(2.0 * SR))))[:n] * 0.6) * 0.8
     if name == 'cheer': return cheer(False)
     if name == 'bigcheer': return cheer(True)
     if name == 'groan': return groan()
@@ -250,6 +301,7 @@ def main():
     amb = crowd_bed(dur)[:, :n]
     fx = np.zeros((2, n))
     for tt, name in cues['sfx']:
+        if name == 'riser': tt -= 1.6
         x = sfx(name)
         if name in ('cheer', 'bigcheer', 'groan'):
             y = sfx(name); place(fx[0], x, tt); place(fx[1], y, tt + 0.01)
@@ -264,7 +316,7 @@ def main():
     wav(f'{tmp}/bed.wav', amb + fx)
     # music ducked under narration; voice on top
     fc = ('[0:a]aformat=sample_rates=48000:channel_layouts=stereo,volume=1.0,asplit=2[v][sc];'
-          '[1:a]volume=1.0[m];'
+          '[1:a]volume=1.12[m];'
           '[m][sc]sidechaincompress=threshold=0.06:ratio=3.5:attack=60:release=500:makeup=1[md];'
           '[2:a]volume=1.0[fx];'
           '[v][md][fx]amix=inputs=3:duration=first:normalize=0,alimiter=limit=0.88,volume=0.78[o]')
