@@ -1,0 +1,36 @@
+= nineteen ninety-four => 1994
+= nineteen ninety-three => 1993
+= Seven hundred and eight => 708
+{title} Shane Warne. @0.35
+{king} The king of spin. @0.4
+{talk} He made a cricket ball do things | nobody thought it could. @0.45
+{today} Today, | Gary is bowling. @0.5
+{warned} The batters have been warned. @0.9
+{n5} Number five. @0.25
+The leg break. @0.35
+{n5w} Warne flicks his wrist, | the ball drifts, | dips, | and spins | a long way sideways. @0.45
+{n5gary} Gary flicks his wrist. @0.7
+{n5wide} The ball spins | all the way to square leg. @1.0
+{n4} Number four. @0.25
+The flipper. @0.35
+{n4w} It skids on low and fast, | and traps the batter in front. @0.45
+{n4gary} Gary tries the flipper. @0.7
+{n4back} It flies out backwards. | Over the sight screen. @1.0
+{n3} Number three. @0.25
+The hat-trick. @0.35
+{n3w} Melbourne, | Boxing Day, | nineteen ninety-four. | Three England batters, | three balls, | three wickets. @0.45
+{n3gary} Gary also bowls three in a row. @0.7
+{n3wides} Wide. | Wide. | And wide. @1.0
+{n2} Number two. @0.25
+Seven hundred and eight. @0.35
+{n2w} That's how many Test wickets Warne took. | More than any bowler | except Muttiah Muralitharan. @0.45
+{n2gary} Gary's total is | three. @0.7
+{n2own} And one of them was his own stumps. @1.0
+{n1} And number one. @0.25
+The ball of the century. @0.35
+{n1w} Old Trafford, | nineteen ninety-three. | His first ever ball | in Ashes cricket. @0.35
+{n1spin} It pitches outside leg stump, | and spins back | to hit off stump. @0.45
+{n1gary} Gary gives it everything. @0.7
+{n1hit} It spins so much, | it comes all the way back | and bowls Gary. @1.0
+{outro} Warne made spin bowling | the coolest thing in cricket. @0.5
+{dizzy} Gary made it | dizzy. @1.6

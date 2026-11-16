@@ -70,6 +70,18 @@ const LOOKS = {
     shirt: '#1d7a46', accent: '#c9f06a', trousers: '#1d7a46', skin: '#c58c5c', hair: '#18110c',
     head: 'cap', capColor: '#155c34', pads: true, gloves: '#f1f1ea', bigGloves: true, shoes: '#f4f4f0', sleeve: 'long',
   },
+  warne: {
+    shirt: '#f7f5ee', accent: '#1d4a2b', trousers: '#f7f5ee', skin: '#efc39b', hair: '#f0cf6e',
+    head: 'cap', capColor: '#1d4a2b', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'long',
+  },
+  ausKeeper: {
+    shirt: '#f7f5ee', accent: '#1d4a2b', trousers: '#f7f5ee', skin: '#e9b48a', hair: '#3b2a1c',
+    head: 'cap', capColor: '#1d4a2b', pads: true, gloves: '#f1f1ea', bigGloves: true, shoes: '#f4f4f0', sleeve: 'long',
+  },
+  england: {
+    shirt: '#f7f5ee', accent: '#1b2a4a', trousers: '#f7f5ee', skin: '#f0c9a4', hair: '#6b4a2b',
+    head: 'helmet', capColor: '#1b2a4a', pads: true, gloves: '#f4f4f0', shoes: '#f4f4f0', sleeve: 'long',
+  },
   umpire: {
     shirt: '#fbfbf7', accent: '#2a2f3a', trousers: '#2b2f38', skin: '#f0c9a4', hair: '#bdbdbd',
     head: 'hat', capColor: '#fbfbf7', pads: false, gloves: null, shoes: '#202020', sleeve: 'long', coat: true,

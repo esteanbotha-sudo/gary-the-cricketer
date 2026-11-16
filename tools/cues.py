@@ -31,6 +31,23 @@ if ep == 'abd':
     a(e1, 'ding'); a(T['n1mark'] + 0.25, 'bat'); a(T['n1mark'] + 1.0, 'cheer', 'pop')
     a(T['yes'] + 0.1, 'pop'); a(T['no'] - 0.1, 'whoosh'); a(T['no'] + 0.7, 'riser', 'hit', 'groan')
     sections = [[0, 'intro'], [T['n5'] - 0.5, 'full'], [T['outro'] - 0.3, 'outro']]
+elif ep == 'warne':
+    a(T['king'], 'thud', 'cheer'); a(T['today'], 'swish'); a(T['warned'] + 0.1, 'pop')
+    tr = T['n5w'] + 1.4; a(tr + 0.75, 'block'); a(tr + 1.05, 'catch'); a(tr + 1.1, 'cheer', 'thud')
+    a(T['n5wide'] - 0.2, 'swish'); a(T['n5wide'] + 0.3, 'boing', 'ding', 'groan')
+    tr = T['n4w'] + 0.9; a(tr + 0.55, 'block'); a(tr + 0.6, 'cheer'); a(tr + 0.6, 'riser', 'hit')
+    a(T['n4back'] - 0.25, 'swish'); a(T['n4back'] + 0.2, 'ding', 'groan')
+    for k in (3.2, 4.15, 5.1):
+        a(T['n3w'] + k + 0.5, 'stumps', 'cheer')
+    a(T['n3w'] + 6.0, 'riser', 'hit', 'bigcheer')
+    for k in (-0.45, 0.14, 0.73): a(T['n3wides'] + k + 0.45, 'pop')
+    a(T['n3wides'] + 1.25, 'ding', 'groan')
+    a(T['n2'] + 0.6, 'riser'); a(T['n2w'] - 0.2, 'hit', 'bigcheer'); a(T['n2w'] + 2.2, 'whoosh')
+    a(T['n2own'], 'thud'); a(T['n2own'] + 0.3, 'ding', 'groan')
+    tr = T['n1spin'] - 0.25; a(tr + 0.75, 'block'); a(tr + 1.1, 'stumps', 'riser', 'hit', 'bigcheer')
+    tb = T['n1hit'] + 3.3; a(tb, 'stumps', 'riser', 'hit', 'ding'); a(tb + 0.3, 'groan')
+    a(T['outro'] + 0.4, 'pop'); a(T['dizzy'] + 0.9, 'swish', 'boing'); a(T['dizzy'] + 2.2, 'thud')
+    sections = [[0, 'intro'], [T['n5'] - 0.5, 'full'], [T['outro'] - 0.3, 'outro']]
 else:
     a(T['king'], 'thud', 'cheer'); a(T['studied'], 'swish'); a(T['see'] + 0.2, 'pop')
     tc, tf = T['n5vk'] + 0.15, T['n5vk'] + 1.95
