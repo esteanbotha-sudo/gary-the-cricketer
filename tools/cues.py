@@ -48,6 +48,24 @@ elif ep == 'warne':
     tb = T['n1hit'] + 3.3; a(tb, 'stumps', 'riser', 'hit', 'ding'); a(tb + 0.3, 'groan')
     a(T['outro'] + 0.4, 'pop'); a(T['dizzy'] + 0.9, 'swish', 'boing'); a(T['dizzy'] + 2.2, 'thud')
     sections = [[0, 'intro'], [T['n5'] - 0.5, 'full'], [T['outro'] - 0.3, 'outro']]
+elif ep == 'sachin':
+    a(T['master'], 'thud', 'cheer'); a(T['hundreds'], 'riser'); a(T['hundreds'] + 0.02, 'hit'); a(T['today'], 'swish'); a(T['how'] + 0.1, 'pop')
+    tc = T['n5s'] + 2.15; a(tc, 'bat'); a(tc + 0.1, 'cheer'); a(tc + 1.0, 'thud')
+    tc = T['n5hit'] + 0.35; a(tc, 'bat'); a(tc + 0.7, 'block', 'boing', 'ding'); a(tc + 0.75, 'groan')
+    tc = T['n4s'] + 2.7; a(tc, 'bat', 'riser', 'hit'); a(tc + 0.15, 'bigcheer'); a(tc + 0.9, 'thud')
+    tc = T['n4caught'] - 0.3; a(tc, 'block'); a(tc + 0.3, 'catch'); a(T['n4caught'], 'riser', 'hit', 'ding'); a(T['n4caught'] + 0.2, 'cheer')
+    a(T['n3s'] + 0.6, 'thud'); a(T['n3s'] + 4.05, 'block'); a(T['n3gary'] + 0.3, 'whoosh'); a(T['n3wait'], 'boing'); a(T['n3wait'] + 0.3, 'ding', 'groan')
+    s0, e0 = T['n2'] + 0.6, T['n2s'] + 5.6; per = (e0 - s0) / 20
+    a(s0, 'bigcheer')
+    for i in range(20): a(s0 + i * per + 0.5 * per, 'bat')
+    a(e0, 'riser', 'hit', 'bigcheer')
+    s1, e1 = T['n2gary'] + 0.3, T['n2balls'] + 0.2; p1 = (e1 - s1) / 40
+    for i in range(40): a(s1 + i * p1 + 0.5 * p1, 'block')
+    a(e1, 'ding'); a(T['n2runs'] + 0.2, 'groan')
+    a(T['n1'], 'bigcheer'); a(T['n1s'], 'riser'); a(T['n1s'] + 0.02, 'hit'); a(T['n1s'] + 3, 'bigcheer')
+    a(T['n1gary'] + 0.3, 'cheer'); a(T['n1drop'] + 1.45, 'thud', 'riser', 'hit', 'ding'); a(T['n1drop'] + 1.6, 'groan')
+    a(T['outro'] + 0.2, 'pop'); a(T['gary2'] + 0.8, 'pop', 'boing')
+    sections = [[0, 'intro'], [T['n5'] - 0.5, 'full'], [T['outro'] - 0.3, 'outro']]
 else:
     a(T['king'], 'thud', 'cheer'); a(T['studied'], 'swish'); a(T['see'] + 0.2, 'pop')
     tc, tf = T['n5vk'] + 0.15, T['n5vk'] + 1.95

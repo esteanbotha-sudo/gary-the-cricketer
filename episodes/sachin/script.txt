@@ -1,0 +1,43 @@
+= One hundred international hundreds => 100 international hundreds
+= sixteen => 16
+= nineteen eighty-nine => 1989
+= two thousand and three => 2003
+= two thousand and ten => 2010
+= two thousand and eleven => 2011
+= two hundred => 200
+= one day international => one-day international
+{title} Sachin Tendulkar. @0.35
+{master} The Little Master. @0.4
+{hundreds} One hundred international hundreds. | Still the most of all time. @0.45
+{today} Today, | Gary is batting like Sachin. @0.5
+{how} How hard can it be? @0.9
+{n5} Number five. @0.25
+The straight drive. @0.35
+{n5s} Head still, | bat straight, | and the ball rockets | back past the bowler. @0.45
+{n5gary} Gary plays it straight. @0.7
+{n5hit} Straight into the umpire. @1.0
+{n4} Number four. @0.25
+The upper cut. @0.35
+{n4where} Centurion, | two thousand and three, | against Pakistan. @0.35
+{n4s} Shoaib Akhtar bowls it short and fast, | and Sachin cuts it high | over the off side | for six. @0.45
+{n4gary} Gary tries the upper cut. @0.7
+{n4caught} Caught behind. @0.4
+{n4still} The keeper didn't even move. @1.0
+{n3} Number three. @0.25
+The early start. @0.35
+{n3s} Sachin made his Test debut | at sixteen, | in nineteen eighty-nine, | against some of the fastest bowlers in the world. @0.45
+{n3gary} Gary also started young. @0.7
+{n3wait} He is still waiting for his debut. @1.0
+{n2} Number two. @0.25
+The double hundred. @0.35
+{n2s} Gwalior, | two thousand and ten. | Sachin becomes the first man ever | to score two hundred | in a one day international. @0.45
+{n2gary} Gary also reached two hundred. @0.7
+{n2balls} Balls faced. @0.35
+{n2runs} For six runs. @1.0
+{n1} And number one. @0.25
+The World Cup. @0.35
+{n1s} Mumbai, | two thousand and eleven. | India win at home, | and his teammates | carry Sachin around the ground | on their shoulders. @0.45
+{n1gary} Gary's teammates lift him up too. @0.7
+{n1drop} For about two seconds. @1.0
+{outro} Sachin was the Little Master. @0.5
+{gary2} Gary is still | the little apprentice. @1.6

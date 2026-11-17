@@ -82,6 +82,22 @@ const LOOKS = {
     shirt: '#f7f5ee', accent: '#1b2a4a', trousers: '#f7f5ee', skin: '#f0c9a4', hair: '#6b4a2b',
     head: 'helmet', capColor: '#1b2a4a', pads: true, gloves: '#f4f4f0', shoes: '#f4f4f0', sleeve: 'long',
   },
+  sachin: {
+    shirt: '#2a7de1', accent: '#ff8a1f', trousers: '#1b3f8f', skin: '#c98d62', hair: '#1a120c',
+    head: 'helmet', capColor: '#16336e', pads: true, gloves: '#f4f4f0', shoes: '#f4f4f0', sleeve: 'long',
+  },
+  sachinCap: {
+    shirt: '#2a7de1', accent: '#ff8a1f', trousers: '#1b3f8f', skin: '#c98d62', hair: '#1a120c',
+    head: 'cap', capColor: '#16336e', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'short',
+  },
+  indiaMate: {
+    shirt: '#2a7de1', accent: '#ff8a1f', trousers: '#1b3f8f', skin: '#a8714a', hair: '#120c08',
+    head: 'cap', capColor: '#16336e', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'short',
+  },
+  garyMate: {
+    shirt: '#1f3a6e', accent: '#f2c230', trousers: '#f4f4f0', skin: '#d9a273', hair: '#2a1a10',
+    head: 'cap', capColor: '#1b3160', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'short',
+  },
   umpire: {
     shirt: '#fbfbf7', accent: '#2a2f3a', trousers: '#2b2f38', skin: '#f0c9a4', hair: '#bdbdbd',
     head: 'hat', capColor: '#fbfbf7', pads: false, gloves: null, shoes: '#202020', sleeve: 'long', coat: true,
