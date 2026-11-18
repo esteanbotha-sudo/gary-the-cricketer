@@ -9,24 +9,23 @@ then "GARY'S TURN" and Gary fails comically, and the "TIMES GARY FAILED" counter
 About 90–100 s of narration, Kokoro `bm_george` voice, shared high-energy soundtrack.
 
 ## Up next
-1. MS Dhoni: helicopter shot, 2011 World Cup winning six, lightning stumping, Captain Cool, finishing
-2. Ben Stokes: Headingley 2019 135*, 2019 World Cup final, reverse hits, big sixes, all-rounder grit
-3. Dale Steyn: raw pace, outswing, the celebration, bouncer, stumps cartwheeling
-4. Jasprit Bumrah: the unusual action, yorkers, slower ball, death bowling, pinpoint accuracy
-5. Brian Lara: 400 not out, high backlift, the pull, 501*, elegance
-6. Chris Gayle: sixes, the stand-and-deliver, T20 records, the dance celebration, 175*
-7. Wasim Akram: reverse swing, inswinging yorker, left-arm angle, 1992 final, hat-tricks
-8. Muttiah Muralitharan: 800 Test wickets, the doosra, huge turn, wristy action, the smile
-9. Jacques Kallis: the cover drive, slip catches, bowling, 10,000 runs + 250 wickets, calm
-10. Glenn Maxwell: 201* vs Afghanistan 2023, the switch hit, reverse sweeps, fielding, chaos
-11. Rohit Sharma: 264, the pull shot, three ODI double hundreds, lazy elegance, sixes
-12. Steve Smith: the fidgety leave, unorthodox technique, Ashes runs, catches, concentration
-13. Jimmy Anderson: swing, 700 Test wickets, the wobble-seam, longevity, accuracy
-14. Rashid Khan: googly, quick leg-spin, the snake shot, T20 dominance, fielding
-15. Ellyse Perry: all-rounder, pace bowling, run-scoring, fielding, two-sport star
-16. Kagiso Rabada: pace, the celebration, yorkers, wicket bursts, youngest records
-17. Jos Buttler: ramps and scoops, finishing, keeping, fastest hundreds, 360 hitting
-18. Babar Azam: cover drive, consistency, captaincy, elegance, quick hundreds
+1. Ben Stokes: Headingley 2019 135*, 2019 World Cup final, reverse hits, big sixes, all-rounder grit
+2. Dale Steyn: raw pace, outswing, the celebration, bouncer, stumps cartwheeling
+3. Jasprit Bumrah: the unusual action, yorkers, slower ball, death bowling, pinpoint accuracy
+4. Brian Lara: 400 not out, high backlift, the pull, 501*, elegance
+5. Chris Gayle: sixes, the stand-and-deliver, T20 records, the dance celebration, 175*
+6. Wasim Akram: reverse swing, inswinging yorker, left-arm angle, 1992 final, hat-tricks
+7. Muttiah Muralitharan: 800 Test wickets, the doosra, huge turn, wristy action, the smile
+8. Jacques Kallis: the cover drive, slip catches, bowling, 10,000 runs + 250 wickets, calm
+9. Glenn Maxwell: 201* vs Afghanistan 2023, the switch hit, reverse sweeps, fielding, chaos
+10. Rohit Sharma: 264, the pull shot, three ODI double hundreds, lazy elegance, sixes
+11. Steve Smith: the fidgety leave, unorthodox technique, Ashes runs, catches, concentration
+12. Jimmy Anderson: swing, 700 Test wickets, the wobble-seam, longevity, accuracy
+13. Rashid Khan: googly, quick leg-spin, the snake shot, T20 dominance, fielding
+14. Ellyse Perry: all-rounder, pace bowling, run-scoring, fielding, two-sport star
+15. Kagiso Rabada: pace, the celebration, yorkers, wicket bursts, youngest records
+16. Jos Buttler: ramps and scoops, finishing, keeping, fastest hundreds, 360 hitting
+17. Babar Azam: cover drive, consistency, captaincy, elegance, quick hundreds
 
 ## Done
 - The Best Wickets in Cricket: `output/gary-wickets.mp4`
@@ -34,3 +33,4 @@ About 90–100 s of narration, Kokoro `bm_george` voice, shared high-energy soun
 - Virat Kohli: `output/gary-kohli.mp4`
 - 2026-11-16 Shane Warne: `output/gary-warne.mp4`
 - 2026-11-17 Sachin Tendulkar: `output/gary-sachin.mp4`
+- 2026-11-18 MS Dhoni: `output/gary-dhoni.mp4`

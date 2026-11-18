@@ -1,0 +1,42 @@
+= M S Dhoni => MS Dhoni
+= two thousand and seven => 2007
+= two thousand and eleven => 2011
+= two thousand and thirteen => 2013
+= ninety-one => 91
+= T twenty => T20
+{title} M S Dhoni. @0.35
+{cool} Captain Cool. @0.45
+{finisher} One of the greatest finishers | the game has ever seen. @0.45
+{today} Today, | Gary is keeping wicket, | captaining, | and finishing. @0.5
+{busy} Busy day. @0.9
+{n5} Number five. @0.25
+The helicopter shot. @0.35
+{n5d} A full ball, | right at the toes. | Dhoni whips the bat round | like a helicopter blade, | and it flies for six. @0.45
+{n5gary} Gary tries the helicopter. @0.7
+{n5fly} The bat takes off. | The ball doesn't. @1.0
+{n4} Number four. @0.25
+The lightning stumping. @0.35
+{n4d} The batter lifts his foot | for a split second, | and the bails are already off. @0.45
+{n4gary} Gary is even faster. @0.7
+{n4early} He takes the bails off | before the ball arrives. @0.4
+{n4byes} Four byes. @1.0
+{n3} Number three. @0.25
+Captain Cool. @0.35
+{n3d} Last over. | Everyone is panicking. | Dhoni just moves one fielder | two steps to the left. | And the next ball | goes straight to him. @0.45
+{n3gary} Gary sets his field. @0.7
+{n3slips} Nine slips. @0.4
+{n3four} The ball goes the other way. @1.0
+{n2} Number two. @0.25
+The trophies. @0.35
+{n2d} The T twenty World Cup in two thousand and seven, | the World Cup in two thousand and eleven, | and the Champions Trophy in two thousand and thirteen. | The only captain | to win all three. @0.45
+{n2gary} Gary's trophy cabinet | has one thing in it. @0.7
+{n2most} Most improved, | under elevens. @0.4
+{n2shared} Shared. @1.0
+{n1} And number one. @0.25
+The finish. @0.35
+{n1d} Mumbai, | two thousand and eleven. | The World Cup final. | Dhoni, ninety-one not out, | smashes a six | to win it for India. @0.45
+{n1gary} Gary also finishes the game. @0.6
+{n1caught} Caught on the boundary. @0.4
+{n1lose} The other team wins. @1.0
+{outro} Dhoni is Captain Cool. @0.5
+{gary2} Gary is | Captain Lukewarm. @1.6

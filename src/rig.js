@@ -98,6 +98,26 @@ const LOOKS = {
     shirt: '#1f3a6e', accent: '#f2c230', trousers: '#f4f4f0', skin: '#d9a273', hair: '#2a1a10',
     head: 'cap', capColor: '#1b3160', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'short',
   },
+  dhoni: {
+    shirt: '#2a7de1', accent: '#ff8a1f', trousers: '#1b3f8f', skin: '#b98055', hair: '#1a120c',
+    head: 'helmet', capColor: '#16336e', pads: true, gloves: '#f4f4f0', shoes: '#f4f4f0', sleeve: 'long',
+  },
+  dhoniKeep: {
+    shirt: '#2a7de1', accent: '#ff8a1f', trousers: '#1b3f8f', skin: '#b98055', hair: '#1a120c',
+    head: 'cap', capColor: '#16336e', pads: true, gloves: '#f1f1ea', bigGloves: true, shoes: '#f4f4f0', sleeve: 'long',
+  },
+  dhoniCap: {
+    shirt: '#2a7de1', accent: '#ff8a1f', trousers: '#1b3f8f', skin: '#b98055', hair: '#1a120c',
+    head: 'cap', capColor: '#16336e', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'short',
+  },
+  garyKeeper: {
+    shirt: '#1f3a6e', accent: '#f2c230', trousers: '#f4f4f0', skin: '#e9b48a', hair: '#5a3825',
+    head: 'cap', capColor: '#1b3160', pads: true, gloves: '#f1f1ea', bigGloves: true, shoes: '#f4f4f0', sleeve: 'long',
+  },
+  maroonBat: {
+    shirt: '#7a1f2b', accent: '#f6c531', trousers: '#7a1f2b', skin: '#6b4430', hair: '#120c08',
+    head: 'helmet', capColor: '#5c1520', pads: true, gloves: '#f4f4f0', shoes: '#f4f4f0', sleeve: 'long',
+  },
   umpire: {
     shirt: '#fbfbf7', accent: '#2a2f3a', trousers: '#2b2f38', skin: '#f0c9a4', hair: '#bdbdbd',
     head: 'hat', capColor: '#fbfbf7', pads: false, gloves: null, shoes: '#202020', sleeve: 'long', coat: true,
