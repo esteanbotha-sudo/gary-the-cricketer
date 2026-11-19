@@ -6,14 +6,14 @@ const q=new URLSearchParams(location.search), c=document.getElementById('c'), x=
 const img=new Image(); img.src=q.get('img');
 window.done=Promise.all([document.fonts.load("900 40px F"),document.fonts.load("800 40px B"),new Promise(r=>img.onload=r)]).then(()=>{
   // crop to the action, slightly zoomed
-  x.drawImage(img, 180, 190, 1550, 726, 0, 0, 1280, 600); x.drawImage(img, 180, 190, 1550, 726, 0, 120, 1280, 600);
-  const g=x.createLinearGradient(0,0,0,300); g.addColorStop(0,'rgba(15,25,50,0.92)'); g.addColorStop(1,'rgba(15,25,50,0)');
+  x.drawImage(img, 195, 80, 1529, 860, 0, 0, 1280, 720);
+  const g=x.createLinearGradient(0,0,0,300); g.addColorStop(0,'rgba(15,25,50,1)'); g.addColorStop(0.18,'rgba(15,25,50,0.92)'); g.addColorStop(1,'rgba(15,25,50,0)');
   x.fillStyle=g; x.fillRect(0,0,1280,320);
   const out=(t,X,Y,f,col,lw)=>{x.font=f;x.lineJoin='round';x.lineWidth=lw;x.strokeStyle='#fff';x.strokeText(t,X,Y);x.fillStyle=col;x.fillText(t,X,Y)};
   x.textAlign='left';
   out(q.get('l1'),40,120,'900 112px F','#f6c531',14);
   out(q.get('l2'),40,230,'900 104px F','#e2283c',14);
-  x.save(); x.translate(1110,600); x.rotate(-0.12);
+  x.save(); x.translate(+(q.get('sx')||1110), +(q.get('sy')||600)); x.rotate(-0.12);
   x.fillStyle='#e2283c'; x.beginPath(); x.roundRect(-150,-62,300,124,20); x.fill(); x.strokeStyle='#fff'; x.lineWidth=8; x.stroke();
   x.fillStyle='#fff'; x.font='800 64px B'; x.textAlign='center'; x.fillText(q.get('tag'),0,22); x.restore();
   return true;});

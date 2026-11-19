@@ -81,6 +81,26 @@ elif ep == 'dhoni':
     a(100.6, 'bat'); a(102.6, 'catch', 'cheer'); a(T['n1lose'], 'riser', 'hit', 'ding', 'groan')
     a(T['outro'] + 0.2, 'pop'); a(T['gary2'] + 0.6, 'pop', 'boing')
     sections = [[0, 'intro'], [T['n5'] - 0.5, 'full'], [T['n3'] - 0.3, 'tense'], [T['n2'] - 0.4, 'full'], [T['outro'] - 0.3, 'outro']]
+elif ep == 'stokes':
+    a(T['never'], 'thud', 'cheer')
+    for k in (0, 0.53, 1.07, 1.6): a(T['all'] + k, 'pop')
+    a(T['today'], 'swish'); a(T['deep'], 'whoosh')
+    th = T['n5s'] + 2.15; a(th - 0.1, 'swish'); a(th + 0.15, 'catch'); a(th + 0.2, 'cheer')
+    for k in (0, 0.75, 1.15): a(T['n5bounce'] + k, 'block')
+    a(T['n5bounce'] + 1.9, 'boing', 'ding', 'groan')
+    tc = T['n4s'] + 0.35; a(tc, 'bat', 'riser', 'hit'); a(tc + 0.1, 'bigcheer'); a(32.6, 'thud')
+    a(T['n4up'] - 0.1, 'bat'); a(39.15, 'stumps', 'riser', 'hit', 'ding'); a(39.3, 'groan')
+    a(47.6, 'swish', 'thud'); a(49.15, 'bat'); a(49.2, 'bigcheer'); a(51.2, 'riser', 'hit'); a(52.8, 'pop')
+    a(T['n3gary'] + 1.6, 'swish', 'thud'); a(58.35, 'block', 'boing'); a(T['n3none'], 'ding', 'groan')
+    a(68.4, 'riser', 'hit'); a(70.6, 'riser', 'hit'); a(71.4, 'bigcheer')
+    for i in range(6): a(T['n2dots'] - 0.2 + i * 0.28 + 0.14, 'block')
+    a(T['n2sleep'], 'boing', 'ding')
+    s0, e0 = 90.3, 97.5; per = (e0 - s0) / 10
+    for i in range(10): a(s0 + i * per + 0.45 * per, 'bat')
+    a(s0, 'bigcheer'); a(e0, 'riser', 'hit', 'bigcheer')
+    tc = T['n1run'] - 0.3; a(tc, 'block'); a(tc + 0.15, 'pop'); a(tc + 0.8, 'pop'); a(tc + 1.15, 'stumps', 'riser', 'hit', 'ding'); a(tc + 1.3, 'groan')
+    a(T['outro'] + 0.2, 'pop'); a(T['gary2'] + 0.3, 'pop', 'boing')
+    sections = [[0, 'intro'], [T['n5'] - 0.5, 'full'], [T['n2'] - 0.4, 'tense'], [T['n1'] - 0.4, 'full'], [T['outro'] - 0.3, 'outro']]
 else:
     a(T['king'], 'thud', 'cheer'); a(T['studied'], 'swish'); a(T['see'] + 0.2, 'pop')
     tc, tf = T['n5vk'] + 0.15, T['n5vk'] + 1.95

@@ -1,0 +1,40 @@
+= two thousand and nineteen => 2019
+= eighty-four => 84
+= one hundred and thirty-five => 135
+= three hundred and fifty-nine => 359
+= seventy-six => 76
+= seventy-four => 74
+{title} Ben Stokes. @0.35
+{never} The man who never gives up. @0.45
+{all} Batter, | bowler, | fielder, | and finisher of impossible chases. @0.45
+{today} Today, | Gary is going full Stokes. @0.5
+{deep} Deep breath. @0.9
+{n5} Number five. @0.25
+The bouncer. @0.35
+{n5s} Stokes charges in | and digs it in short. | The batter barely sees it. @0.45
+{n5gary} Gary bowls his bouncer. @0.7
+{n5bounce} It bounces three times. | And stops. @1.0
+{n4} Number four. @0.25
+The big six. @0.35
+{n4s} A full swing, | and the ball sails | deep into the crowd. @0.45
+{n4gary} Gary swings for six. @0.7
+{n4up} It goes straight up. | And straight down. | Onto his stumps. @1.0
+{n3} Number three. @0.25
+The deflection. @0.35
+{n3s} The World Cup final, | two thousand and nineteen. | Stokes dives for the crease, | the throw hits his bat, | and races away to the boundary. | He puts his hands up to say sorry. @0.45
+{n3gary} Gary dives for the crease too. @0.7
+{n3face} The throw hits him in the face. @0.4
+{n3none} No runs. @1.0
+{n2} Number two. @0.25
+The super over. @0.35
+{n2s} Stokes finished eighty-four not out. | The final was tied. | So was the super over. | England won on boundaries. @0.45
+{n2gary} Gary's super over. @0.6
+{n2dots} Six balls. | Six dots. @0.4
+{n2sleep} Even the scoreboard fell asleep. @1.0
+{n1} And number one. @0.25
+Headingley. @0.35
+{n1s} The Ashes, | two thousand and nineteen. | England need three hundred and fifty-nine. | Last man Jack Leach walks in. | They add seventy-six together. | Stokes scores seventy-four of them, | one hundred and thirty-five not out, | and England win by one wicket. @0.45
+{n1gary} Gary also bats with the last man. @0.7
+{n1run} He runs him out | first ball. @1.0
+{outro} Ben Stokes never gives up. @0.5
+{gary2} Gary gave up | during the warm-up. @1.6
