@@ -1,0 +1,37 @@
+= Four hundred and thirty-nine => 439
+= two hundred and sixty-three => 263
+= four hundred and thirty-nine => 439
+= Number one => Number one
+{title} Dale Steyn. @0.35
+{gun} The Steyn Gun. @0.45
+{fast} Fast, | fierce, | and frightening. @0.45
+{today} Today, | Gary is bowling fast. @0.5
+{ish} Fast-ish. @0.9
+{n5} Number five. @0.25
+The outswinger. @0.35
+{n5s} It starts straight, | then swings away late, | takes the edge, | and flies to slip. @0.45
+{n5gary} Gary bowls his outswinger. @0.7
+{n5back} It swings away. | Then swings back. | Straight to Gary. @1.0
+{n4} Number four. @0.25
+The celebration. @0.35
+{n4s} When Steyn takes a wicket, | everyone knows about it. | Fists clenched, | eyes wide, | one almighty roar. @0.45
+{n4gary} Gary celebrates too. @0.7
+{n4nb} Then the umpire calls | no ball. @1.0
+{n3} Number three. @0.25
+The Steyn Gun. @0.35
+{n3s} He hits the crease hard, | and the ball arrives | before the batter is ready. | The speed gun goes into the red. @0.45
+{n3gary} Gary checks the speed gun. @0.7
+{n3walk} Walking pace. @0.4
+{n3bike} A kid on a bike overtakes the ball. @1.0
+{n2} Number two. @0.25
+World number one. @0.35
+{n2s} Steyn was ranked | the best Test bowler in the world | for two hundred and sixty-three weeks. | Longer than any bowler in history. @0.45
+{n2gary} Gary's world ranking. @0.7
+{n2still} Still loading. @1.0
+{n1} And number one. @0.25
+Four hundred and thirty-nine. @0.35
+{n1s} That's how many Test wickets Steyn took. | More than any other South African. @0.45
+{n1gary} Gary also has four hundred and thirty-nine. @0.7
+{n1nb} No balls. @1.0
+{outro} Dale Steyn is the Steyn Gun. @0.5
+{gary2} Gary is | the Steyn Water Pistol. @1.6

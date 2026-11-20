@@ -130,6 +130,18 @@ const LOOKS = {
     shirt: '#f7f5ee', accent: '#1b2a4a', trousers: '#f7f5ee', skin: '#f3cdb0', hair: '#7a5a3a',
     head: 'helmet', capColor: '#1b2a4a', pads: true, gloves: '#f4f4f0', shoes: '#f4f4f0', sleeve: 'long',
   },
+  steyn: {
+    shirt: '#f7f5ee', accent: '#0b5a31', trousers: '#f7f5ee', skin: '#efc39b', hair: '#3b2a1c',
+    head: 'cap', capColor: '#0b5a31', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'long',
+  },
+  saField: {
+    shirt: '#f7f5ee', accent: '#0b5a31', trousers: '#f7f5ee', skin: '#d9a273', hair: '#1a120c',
+    head: 'cap', capColor: '#0b5a31', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'long',
+  },
+  saKeeper: {
+    shirt: '#f7f5ee', accent: '#0b5a31', trousers: '#f7f5ee', skin: '#f0c7a0', hair: '#3b2a1c',
+    head: 'cap', capColor: '#0b5a31', pads: true, gloves: '#f1f1ea', bigGloves: true, shoes: '#f4f4f0', sleeve: 'long',
+  },
   umpire: {
     shirt: '#fbfbf7', accent: '#2a2f3a', trousers: '#2b2f38', skin: '#f0c9a4', hair: '#bdbdbd',
     head: 'hat', capColor: '#fbfbf7', pads: false, gloves: null, shoes: '#202020', sleeve: 'long', coat: true,
