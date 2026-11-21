@@ -142,6 +142,10 @@ const LOOKS = {
     shirt: '#f7f5ee', accent: '#0b5a31', trousers: '#f7f5ee', skin: '#f0c7a0', hair: '#3b2a1c',
     head: 'cap', capColor: '#0b5a31', pads: true, gloves: '#f1f1ea', bigGloves: true, shoes: '#f4f4f0', sleeve: 'long',
   },
+  bumrah: {
+    shirt: '#2a7de1', accent: '#ff8a1f', trousers: '#1b3f8f', skin: '#b98055', hair: '#120c08',
+    head: 'cap', capColor: '#16336e', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'short', beard: true,
+  },
   umpire: {
     shirt: '#fbfbf7', accent: '#2a2f3a', trousers: '#2b2f38', skin: '#f0c9a4', hair: '#bdbdbd',
     head: 'hat', capColor: '#fbfbf7', pads: false, gloves: null, shoes: '#202020', sleeve: 'long', coat: true,

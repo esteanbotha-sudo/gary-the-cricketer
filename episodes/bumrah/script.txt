@@ -1,0 +1,38 @@
+= two thousand and nineteen => 2019
+= two thousand and twenty-four => 2024
+= four point one seven => 4.17
+= thirty-six => 36
+= T twenty => T20
+{title} Jasprit Bumrah. @0.35
+{boom} Boom boom. @0.45
+{unique} The most unusual action in cricket, | and the most dangerous. @0.45
+{today} Today, | Gary is bowling like Bumrah. @0.5
+{stretch} He has been stretching all morning. @0.9
+{n5} Number five. @0.25
+The action. @0.35
+{n5s} A short, | skippy run up, | a straight, | stiff arm, | and the ball comes out of nowhere. @0.45
+{n5gary} Gary copies the action. @0.7
+{n5knot} His arm gets tied in a knot. @1.0
+{n4} Number four. @0.25
+The yorker. @0.35
+{n4s} Full, | fast, | and right at the base of the stumps. | The batter digs it out, | if he's lucky. @0.45
+{n4gary} Gary bowls his yorker. @0.7
+{n4toes} It lands on his own toes. @1.0
+{n3} Number three. @0.25
+The slower ball. @0.35
+{n3s} Same run up, | same arm, | but the ball floats. | The batter swings way too early. @0.45
+{n3gary} Gary bowls his slower ball. @0.7
+{n3pigeon} So slow, | a pigeon lands on it. @1.0
+{n2} Number two. @0.25
+The hat-trick. @0.35
+{n2s} Kingston, | two thousand and nineteen. | Three West Indies batters, | three balls in a row. | Only the third Indian | to take a Test hat-trick. @0.45
+{n2gary} Gary also gets three in a row. @0.7
+{n2sixes} Six. | Six. | And six. @1.0
+{n1} And number one. @0.25
+The World Cup. @0.35
+{n1s} The T twenty World Cup, | two thousand and twenty-four. | Fifteen wickets, | an economy rate of four point one seven, | Player of the Tournament, | and India are champions. @0.45
+{n1gary} Gary's economy rate. @0.7
+{n1rate} Thirty-six. @0.4
+{n1every} Every over. @1.0
+{outro} Bumrah is boom boom. @0.5
+{gary2} Gary is | boom boom | bust. @1.6
