@@ -146,6 +146,18 @@ const LOOKS = {
     shirt: '#2a7de1', accent: '#ff8a1f', trousers: '#1b3f8f', skin: '#b98055', hair: '#120c08',
     head: 'cap', capColor: '#16336e', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'short', beard: true,
   },
+  lara: {
+    shirt: '#7a1f2b', accent: '#f6c531', trousers: '#f7f5ee', skin: '#6b4430', hair: '#120c08',
+    head: 'helmet', capColor: '#5c1520', pads: true, gloves: '#f4f4f0', shoes: '#f4f4f0', sleeve: 'long',
+  },
+  laraCap: {
+    shirt: '#7a1f2b', accent: '#f6c531', trousers: '#f7f5ee', skin: '#6b4430', hair: '#120c08',
+    head: 'cap', capColor: '#5c1520', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'short',
+  },
+  laraWarks: {
+    shirt: '#f7f5ee', accent: '#1b2a4a', trousers: '#f7f5ee', skin: '#6b4430', hair: '#120c08',
+    head: 'helmet', capColor: '#1b2a4a', pads: true, gloves: '#f4f4f0', shoes: '#f4f4f0', sleeve: 'long',
+  },
   umpire: {
     shirt: '#fbfbf7', accent: '#2a2f3a', trousers: '#2b2f38', skin: '#f0c9a4', hair: '#bdbdbd',
     head: 'hat', capColor: '#fbfbf7', pads: false, gloves: null, shoes: '#202020', sleeve: 'long', coat: true,

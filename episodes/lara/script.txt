@@ -1,0 +1,46 @@
+= Four hundred not out => 400 not out
+= four hundred not out => 400 not out
+= Five hundred and one not out => 501 not out
+= Five oh one => 501
+= five oh one => 501
+= Three seven five => 375
+= five hundred and one => 501
+= four hundred and ninety-nine => 499
+= three hundred and seventy-five => 375
+= nineteen ninety-four => 1994
+= two thousand and four => 2004
+{title} Brian Lara. @0.35
+{prince} The Prince of Trinidad. @0.45
+{style} The most beautiful batter | you will ever see. @0.45
+{today} Today, | Gary is batting like Lara. @0.5
+{flair} With flair. @0.9
+{n5} Number five. @0.25
+The backlift. @0.35
+{n5s} Lara lifts his bat | high above his head, | then brings it down | at exactly the right moment. @0.45
+{n5gary} Gary lifts his bat high. @0.7
+{n5stuck} It gets stuck | in a tree. @1.0
+{n4} Number four. @0.25
+The pull shot. @0.35
+{n4s} A short ball, | a quick swivel, | and it flies over square leg. @0.45
+{n4gary} Gary tries the pull. @0.7
+{n4spin} He spins all the way round. | Twice. @0.4
+{n4dizzy} Then sits down. @1.0
+{n3} Number three. @0.25
+Three seven five. @0.35
+{n3s} Antigua, | nineteen ninety-four. | Lara scores three hundred and seventy-five | against England, | a new Test record. @0.45
+{n3gary} Gary scores three, | seven, | and five. @0.7
+{n3innings} In three different innings. @1.0
+{n2} Number two. @0.25
+Five oh one. @0.35
+{n2s} Edgbaston, | nineteen ninety-four. | Playing for Warwickshire, | Lara scores five hundred and one not out, | passing Hanif Mohammad's four hundred and ninety-nine. | Still the highest score in first-class cricket. @0.45
+{n2gary} Gary's highest score. @0.7
+{n2one} Also five oh one. @0.4
+{n2dec} Five, | oh, | and one. @1.0
+{n1} And number one. @0.25
+Four hundred not out. @0.35
+{n1s} Antigua again, | two thousand and four. | Against England again, | he takes the record back | with four hundred not out. | The only quadruple hundred | in Test history. @0.45
+{n1gary} Gary also reaches four hundred. @0.7
+{n1steps} Steps. @0.4
+{n1walk} On his walk back to the pavilion. @1.0
+{outro} Brian Lara is the Prince. @0.5
+{gary2} Gary is | the court jester. @1.6
