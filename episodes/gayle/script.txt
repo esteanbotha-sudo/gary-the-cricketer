@@ -1,0 +1,45 @@
+= one hundred and seventy-five not out => 175 not out
+= One seven five => 175
+= two hundred and fifteen => 215
+= two thousand and thirteen => 2013
+= two thousand and fifteen => 2015
+= thirty => 30
+= sixty-six => 66
+= seventeen => 17
+= one thousand => 1,000
+= T twenty => T20
+{title} Chris Gayle. @0.35
+{boss} The Universe Boss. @0.45
+{big} The biggest hitter | cricket has ever seen. @0.45
+{today} Today, | Gary is going big. @0.5
+{small} Starting small. @0.9
+{n5} Number five. @0.25
+Stand and deliver. @0.35
+{n5s} Gayle barely moves his feet. | He just stands there, | and the ball disappears | into the crowd. @0.45
+{n5gary} Gary also stands still. @0.7
+{n5bowled} He is bowled. @0.4
+{n5still} He is still standing still. @1.0
+{n4} Number four. @0.25
+The dance. @0.35
+{n4s} When Gayle hits a hundred, | he dances. | Arms out, | hips moving, | the whole crowd joins in. @0.45
+{n4gary} Gary dances too. @0.7
+{n4slip} He slips. | On the pitch. @1.0
+{n3} Number three. @0.25
+The sixes. @0.35
+{n3s} Gayle was the first player | to hit one thousand sixes | in T twenty cricket. @0.45
+{n3gary} Gary hits a six. @0.7
+{n3wrong} Into his own car. @0.4
+{n3window} Through the windscreen. @1.0
+{n2} Number two. @0.25
+The World Cup double. @0.35
+{n2s} Canberra, | two thousand and fifteen, | against Zimbabwe. | Gayle smashes two hundred and fifteen. | The first double hundred | in World Cup history. @0.45
+{n2gary} Gary also got a double. @0.7
+{n2duck} A double duck. @1.0
+{n1} And number one. @0.25
+One seven five. @0.35
+{n1s} Bangalore, | two thousand and thirteen. | A hundred off thirty balls, | seventeen sixes, | and one hundred and seventy-five not out | off just sixty-six balls. @0.45
+{n1gary} Gary faced sixty-six balls too. @0.7
+{n1one} He scored one. @0.4
+{n1bye} It was a bye. @1.0
+{outro} Chris Gayle is the Universe Boss. @0.5
+{gary2} Gary is | the Neighbourhood Intern. @1.6

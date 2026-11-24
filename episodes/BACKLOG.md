@@ -9,19 +9,18 @@ then "GARY'S TURN" and Gary fails comically, and the "TIMES GARY FAILED" counter
 About 90–100 s of narration, Kokoro `bm_george` voice, shared high-energy soundtrack.
 
 ## Up next
-1. Chris Gayle: sixes, the stand-and-deliver, T20 records, the dance celebration, 175*
-2. Wasim Akram: reverse swing, inswinging yorker, left-arm angle, 1992 final, hat-tricks
-3. Muttiah Muralitharan: 800 Test wickets, the doosra, huge turn, wristy action, the smile
-4. Jacques Kallis: the cover drive, slip catches, bowling, 10,000 runs + 250 wickets, calm
-5. Glenn Maxwell: 201* vs Afghanistan 2023, the switch hit, reverse sweeps, fielding, chaos
-6. Rohit Sharma: 264, the pull shot, three ODI double hundreds, lazy elegance, sixes
-7. Steve Smith: the fidgety leave, unorthodox technique, Ashes runs, catches, concentration
-8. Jimmy Anderson: swing, 700 Test wickets, the wobble-seam, longevity, accuracy
-9. Rashid Khan: googly, quick leg-spin, the snake shot, T20 dominance, fielding
-10. Ellyse Perry: all-rounder, pace bowling, run-scoring, fielding, two-sport star
-11. Kagiso Rabada: pace, the celebration, yorkers, wicket bursts, youngest records
-12. Jos Buttler: ramps and scoops, finishing, keeping, fastest hundreds, 360 hitting
-13. Babar Azam: cover drive, consistency, captaincy, elegance, quick hundreds
+1. Wasim Akram: reverse swing, inswinging yorker, left-arm angle, 1992 final, hat-tricks
+2. Muttiah Muralitharan: 800 Test wickets, the doosra, huge turn, wristy action, the smile
+3. Jacques Kallis: the cover drive, slip catches, bowling, 10,000 runs + 250 wickets, calm
+4. Glenn Maxwell: 201* vs Afghanistan 2023, the switch hit, reverse sweeps, fielding, chaos
+5. Rohit Sharma: 264, the pull shot, three ODI double hundreds, lazy elegance, sixes
+6. Steve Smith: the fidgety leave, unorthodox technique, Ashes runs, catches, concentration
+7. Jimmy Anderson: swing, 700 Test wickets, the wobble-seam, longevity, accuracy
+8. Rashid Khan: googly, quick leg-spin, the snake shot, T20 dominance, fielding
+9. Ellyse Perry: all-rounder, pace bowling, run-scoring, fielding, two-sport star
+10. Kagiso Rabada: pace, the celebration, yorkers, wicket bursts, youngest records
+11. Jos Buttler: ramps and scoops, finishing, keeping, fastest hundreds, 360 hitting
+12. Babar Azam: cover drive, consistency, captaincy, elegance, quick hundreds
 
 ## Done
 - The Best Wickets in Cricket: `output/gary-wickets.mp4`
@@ -34,3 +33,4 @@ About 90–100 s of narration, Kokoro `bm_george` voice, shared high-energy soun
 - 2026-11-20 Dale Steyn: `output/gary-steyn.mp4`
 - 2026-11-21 Jasprit Bumrah: `output/gary-bumrah.mp4`
 - 2026-11-22 Brian Lara: `output/gary-lara.mp4`
+- 2026-11-23 Chris Gayle (made 11-24, run delayed): `output/gary-gayle.mp4`

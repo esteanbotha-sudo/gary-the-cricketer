@@ -1,0 +1,38 @@
+= nineteen ninety-two => 1992
+= five hundred => 500
+= two thousand and three => 2003
+{title} Wasim Akram. @0.35
+{sultan} The Sultan of Swing. @0.45
+{magic} Left arm, | lightning fast, | and he made the ball talk. @0.45
+{today} Today, | Gary is bowling left handed. @0.5
+{right} He is right handed. @0.9
+{n5} Number five. @0.25
+The left-arm angle. @0.35
+{n5s} Coming round the wicket, | the ball angles in, | and the batter can't get out of the way. @0.45
+{n5gary} Gary goes round the wicket. @0.7
+{n5ump} He runs into the umpire. @1.0
+{n4} Number four. @0.25
+Reverse swing. @0.35
+{n4s} An old ball, | very fast, | and it suddenly swings | the opposite way. @0.45
+{n4gary} Gary's ball also swings the opposite way. @0.7
+{n4square} Towards square leg. @0.4
+{n4dog} A dog fetches it. @1.0
+{n3} Number three. @0.25
+The inswinging yorker. @0.35
+{n3s} It starts outside off, | swings in late, | and crashes into the stumps. | Middle stump, | gone. @0.45
+{n3gary} Gary's yorker also hits the stumps. @0.7
+{n3own} His own. @0.4
+{n3run} On his run up. @1.0
+{n2} Number two. @0.25
+Five hundred. @0.35
+{n2s} At the two thousand and three World Cup, | Akram became the first bowler | to take five hundred one day wickets. @0.45
+{n2gary} Gary has also bowled five hundred. @0.7
+{n2wides} Wides. @1.0
+{n1} And number one. @0.25
+The final. @0.35
+{n1s} Melbourne, | nineteen ninety-two. | The World Cup final. | Two balls, | two wickets, | Lamb and Lewis both bowled, | and Pakistan are world champions. @0.45
+{n1gary} Gary also gets two in two balls. @0.7
+{n1hit} Both hit him. @0.4
+{n1where} In the same place. @1.0
+{outro} Wasim Akram is the Sultan of Swing. @0.5
+{gary2} Gary is | the Sultan of Swings and Misses. @1.6

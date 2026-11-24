@@ -158,6 +158,22 @@ const LOOKS = {
     shirt: '#f7f5ee', accent: '#1b2a4a', trousers: '#f7f5ee', skin: '#6b4430', hair: '#120c08',
     head: 'helmet', capColor: '#1b2a4a', pads: true, gloves: '#f4f4f0', shoes: '#f4f4f0', sleeve: 'long',
   },
+  gayle: {
+    shirt: '#7a1f2b', accent: '#f6c531', trousers: '#7a1f2b', skin: '#5e3b29', hair: '#120c08',
+    head: 'helmet', capColor: '#5c1520', pads: true, gloves: '#f4f4f0', shoes: '#f4f4f0', sleeve: 'long', beard: true,
+  },
+  gayleCap: {
+    shirt: '#7a1f2b', accent: '#f6c531', trousers: '#7a1f2b', skin: '#5e3b29', hair: '#120c08',
+    head: 'cap', capColor: '#5c1520', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'short', beard: true,
+  },
+  gayleRcb: {
+    shirt: '#c8102e', accent: '#f6c531', trousers: '#1b1b1b', skin: '#5e3b29', hair: '#120c08',
+    head: 'helmet', capColor: '#1b1b1b', pads: true, gloves: '#f4f4f0', shoes: '#f4f4f0', sleeve: 'long', beard: true,
+  },
+  akram: {
+    shirt: '#0f7a43', accent: '#c9f06a', trousers: '#0f7a43', skin: '#c58c5c', hair: '#18110c',
+    head: 'cap', capColor: '#0b5a31', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'short',
+  },
   umpire: {
     shirt: '#fbfbf7', accent: '#2a2f3a', trousers: '#2b2f38', skin: '#f0c9a4', hair: '#bdbdbd',
     head: 'hat', capColor: '#fbfbf7', pads: false, gloves: null, shoes: '#202020', sleeve: 'long', coat: true,
