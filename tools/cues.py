@@ -169,6 +169,20 @@ elif ep == 'gayle':
     a(T['n1one'], 'pop'); a(T['n1bye'], 'ding', 'groan')
     a(T['outro'] + 0.2, 'pop'); a(T['gary2'] + 0.7, 'pop', 'boing')
     sections = [[0, 'intro'], [T['n5'] - 0.5, 'full'], [T['outro'] - 0.3, 'full']]
+elif ep == 'akram':
+    a(T['sultan'], 'thud', 'cheer'); a(4.57, 'pop'); a(5.23, 'pop'); a(T['today'], 'swish'); a(T['right'], 'boing')
+    a(19.0, 'swish'); a(19.5, 'block', 'cheer')
+    a(25.7, 'thud', 'riser', 'hit', 'ding'); a(25.9, 'groan')
+    a(33.1, 'swish'); a(33.65, 'stumps', 'riser', 'hit', 'bigcheer')
+    a(38.0, 'swish'); a(40.2, 'boing'); a(T['n4dog'], 'pop', 'ding', 'groan')
+    a(49.9, 'swish'); a(50.5, 'stumps', 'riser', 'hit', 'bigcheer'); a(52.29, 'thud')
+    a(57.55, 'stumps', 'thud', 'ding'); a(57.7, 'groan'); a(T['n3run'], 'riser', 'hit')
+    a(T['n2'] + 0.6, 'riser'); a(69.6, 'hit', 'bigcheer')
+    a(T['n2wides'], 'riser', 'hit', 'ding', 'groan')
+    a(83.5, 'stumps', 'cheer'); a(84.5, 'stumps', 'bigcheer'); a(86.1, 'riser', 'hit', 'bigcheer')
+    a(90.55, 'bat'); a(90.9, 'thud', 'boing'); a(91.55, 'bat'); a(91.9, 'thud', 'boing', 'ding'); a(T['n1where'], 'groan')
+    a(T['outro'] + 0.2, 'pop'); a(T['gary2'] + 0.7, 'swish', 'pop', 'boing')
+    sections = [[0, 'intro'], [T['n5'] - 0.5, 'full'], [T['outro'] - 0.3, 'outro']]
 else:
     a(T['king'], 'thud', 'cheer'); a(T['studied'], 'swish'); a(T['see'] + 0.2, 'pop')
     tc, tf = T['n5vk'] + 0.15, T['n5vk'] + 1.95
