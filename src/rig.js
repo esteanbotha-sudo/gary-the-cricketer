@@ -174,6 +174,18 @@ const LOOKS = {
     shirt: '#0f7a43', accent: '#c9f06a', trousers: '#0f7a43', skin: '#c58c5c', hair: '#18110c',
     head: 'cap', capColor: '#0b5a31', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'short',
   },
+  murali: {
+    shirt: '#1b3f8f', accent: '#f6c531', trousers: '#1b3f8f', skin: '#8a5a3a', hair: '#120c08',
+    head: 'cap', capColor: '#16336e', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'long',
+  },
+  muraliTest: {
+    shirt: '#f7f5ee', accent: '#1b3f8f', trousers: '#f7f5ee', skin: '#8a5a3a', hair: '#120c08',
+    head: 'cap', capColor: '#16336e', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'long',
+  },
+  slKeeper: {
+    shirt: '#f7f5ee', accent: '#1b3f8f', trousers: '#f7f5ee', skin: '#9a6a48', hair: '#120c08',
+    head: 'cap', capColor: '#16336e', pads: true, gloves: '#f1f1ea', bigGloves: true, shoes: '#f4f4f0', sleeve: 'long',
+  },
   umpire: {
     shirt: '#fbfbf7', accent: '#2a2f3a', trousers: '#2b2f38', skin: '#f0c9a4', hair: '#bdbdbd',
     head: 'hat', capColor: '#fbfbf7', pads: false, gloves: null, shoes: '#202020', sleeve: 'long', coat: true,

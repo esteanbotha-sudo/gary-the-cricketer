@@ -1,0 +1,41 @@
+= Nine for sixty-five => 9 for 65
+= eight hundred => 800
+= Eight hundred => 800
+= five hundred and thirty-four => 534
+= nineteen ninety-eight => 1998
+= two thousand and ten => 2010
+= nine for sixty-five => 9 for 65
+= sixteen => 16
+{title} Muttiah Muralitharan. @0.35
+{murali} Murali. @0.45
+{spin} The greatest wicket-taker | the game has ever seen, | with a big smile | and a very bendy wrist. @0.45
+{today} Today, | Gary is bowling spin. @0.5
+{dizzy} Wish him luck. @0.9
+{n5} Number five. @0.25
+The big turn. @0.35
+{n5s} Murali's off-break pitches wide, | spins back a mile, | and hits the stumps. @0.45
+{n5gary} Gary spins it too. @0.7
+{n5back} It spins back | all the way to Gary. @1.0
+{n4} Number four. @0.25
+The doosra. @0.35
+{n4s} Same action, | but this one spins the other way. | The batter has no idea. @0.45
+{n4gary} Gary bowls a doosra. @0.7
+{n4ump} The umpire has no idea either. | Neither does Gary. @1.0
+{n3} Number three. @0.25
+The Oval. @0.35
+{n3s} London, | nineteen ninety-eight. | Nine for sixty-five | in one innings, | sixteen wickets in the match, | and Sri Lanka win. @0.45
+{n3gary} Gary also took nine. @0.7
+{n3att} Attempts | to get the ball to land on the pitch. @1.0
+{n2} Number two. @0.25
+The smile. @0.35
+{n2s} Murali always bowled with a smile, | even after a sixty-over spell | in the heat. @0.45
+{n2gary} Gary also smiles. @0.7
+{n2tired} Then he needs a lie-down. | After one over. @1.0
+{n1} And number one. @0.25
+Eight hundred. @0.35
+{n1s} Galle, | two thousand and ten. | His last Test, | his last ball. | Murali takes his eight hundredth Test wicket, | the most ever. | Plus five hundred and thirty-four in one-day cricket. @0.45
+{n1gary} Gary also has eight hundred. @0.7
+{n1runs} Runs against him. @0.4
+{n1over} In one over. @1.0
+{outro} Murali bowled the world dizzy. @0.5
+{gary2} Gary is just | dizzy. @1.6
