@@ -1,0 +1,43 @@
+= Forty-five => 45
+= thirteen thousand two hundred and eighty-nine => 13,289
+= two hundred and ninety-two => 292
+= forty-five => 45
+= two hundred => 200
+= ten thousand => 10,000
+{title} Jacques Kallis. @0.35
+{king} The complete cricketer. @0.45
+{calm} He could bat, | bowl, | and catch, | and he never looked in a hurry. @0.45
+{today} Today, | Gary is doing all three. @0.5
+{panic} He is already in a hurry. @0.9
+{n5} Number five. @0.25
+The cover drive. @0.35
+{n5s} Front foot, | high elbow, | and the ball glides | through the covers. @0.45
+{n5gary} Gary drives too. @0.7
+{n5split} He does the splits. @0.4
+{n5stuck} And can't get up. @1.0
+{n4} Number four. @0.25
+The slip catch. @0.35
+{n4s} Kallis took two hundred catches in Test cricket. | Most of them at slip, | most of them without even blinking. @0.45
+{n4gary} Gary waits at slip. @0.7
+{n4yawn} He yawns. @0.4
+{n4mouth} The ball goes in his mouth. @1.0
+{n3} Number three. @0.25
+The bowling. @0.35
+{n3s} Kallis wasn't just a batter. | He bowled fast, | and took two hundred and ninety-two Test wickets. @0.45
+{n3gary} Gary bowls fast too. @0.7
+{n3fall} He falls over | in his delivery stride. @0.4
+{n3ball} The ball rolls down the pitch | on its own. @1.0
+{n2} Number two. @0.25
+The hundreds. @0.35
+{n2s} Forty-five Test hundreds, | thirteen thousand two hundred and eighty-nine Test runs, | and a hundred in his very last Test. @0.45
+{n2gary} Gary also made a hundred. @0.7
+{n2tries} Tries. @0.4
+{n2nets} In the nets. @1.0
+{n1} And number one. @0.25
+The all-rounder. @0.35
+{n1s} Over ten thousand runs | and two hundred wickets | in both Test and one-day cricket. | Batter, | bowler, | fielder. | All world class. @0.45
+{n1gary} Gary is also a batter, | bowler and fielder. @0.7
+{n1all} All at once. @0.4
+{n1tangle} He gets tangled up. @1.0
+{outro} Jacques Kallis was the complete cricketer. @0.5
+{gary2} Gary is | completely confused. @1.6

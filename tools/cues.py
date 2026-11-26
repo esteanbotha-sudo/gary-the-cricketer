@@ -201,6 +201,21 @@ elif ep == 'murali':
     a(T['n1over'], 'riser', 'hit', 'ding', 'groan')
     a(T['outro'] + 0.2, 'pop'); a(T['gary2'] + 0.9, 'swish', 'boing'); a(T['gary2'] + 2.2, 'thud')
     sections = [[0, 'intro'], [T['n5'] - 0.5, 'full'], [T['outro'] - 0.3, 'outro']]
+elif ep == 'kallis':
+    a(T['king'], 'thud', 'cheer'); a(4.08, 'pop'); a(4.81, 'pop'); a(5.13, 'pop'); a(T['today'], 'whoosh'); a(T['panic'], 'boing')
+    a(18.6, 'bat'); a(18.9, 'cheer'); a(20.0, 'thud')
+    a(23.4, 'swish'); a(23.7, 'catch'); a(T['n5split'] + 0.3, 'riser', 'hit', 'ding'); a(T['n5split'] + 0.4, 'groan')
+    a(31.3, 'block'); a(31.65, 'catch', 'riser', 'hit', 'bigcheer')
+    a(41.1, 'block'); a(T['n4yawn'], 'boing'); a(41.6, 'pop', 'riser', 'hit', 'ding'); a(41.8, 'groan')
+    a(49.75, 'stumps', 'riser', 'hit', 'bigcheer')
+    a(56.4, 'thud', 'swish'); a(T['n3ball'], 'ding', 'groan')
+    a(65.8, 'riser'); a(67.6, 'hit', 'bigcheer'); a(71.2, 'pop')
+    for i in range(int((78.2 - T['n2gary']) / 0.5)): a(T['n2gary'] + i * 0.5 + 0.25, 'swish')
+    a(T['n2nets'], 'ding', 'groan')
+    a(83.16, 'riser'); a(84.72, 'hit', 'bigcheer'); a(88.77, 'pop'); a(89.44, 'pop'); a(90.12, 'pop')
+    a(T['n1all'], 'swish'); a(T['n1tangle'] + 0.4, 'thud', 'riser', 'hit', 'ding'); a(T['n1tangle'] + 0.6, 'groan')
+    a(T['outro'] + 0.2, 'pop'); a(T['gary2'] + 0.5, 'pop', 'boing')
+    sections = [[0, 'intro'], [T['n5'] - 0.5, 'full'], [T['outro'] - 0.3, 'outro']]
 else:
     a(T['king'], 'thud', 'cheer'); a(T['studied'], 'swish'); a(T['see'] + 0.2, 'pop')
     tc, tf = T['n5vk'] + 0.15, T['n5vk'] + 1.95

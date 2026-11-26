@@ -186,6 +186,14 @@ const LOOKS = {
     shirt: '#f7f5ee', accent: '#1b3f8f', trousers: '#f7f5ee', skin: '#9a6a48', hair: '#120c08',
     head: 'cap', capColor: '#16336e', pads: true, gloves: '#f1f1ea', bigGloves: true, shoes: '#f4f4f0', sleeve: 'long',
   },
+  kallis: {
+    shirt: '#f7f5ee', accent: '#0b5a31', trousers: '#f7f5ee', skin: '#efc39b', hair: '#3b2a1c',
+    head: 'helmet', capColor: '#0b5a31', pads: true, gloves: '#f4f4f0', shoes: '#f4f4f0', sleeve: 'long',
+  },
+  kallisCap: {
+    shirt: '#f7f5ee', accent: '#0b5a31', trousers: '#f7f5ee', skin: '#efc39b', hair: '#3b2a1c',
+    head: 'cap', capColor: '#0b5a31', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'long',
+  },
   umpire: {
     shirt: '#fbfbf7', accent: '#2a2f3a', trousers: '#2b2f38', skin: '#f0c9a4', hair: '#bdbdbd',
     head: 'hat', capColor: '#fbfbf7', pads: false, gloves: null, shoes: '#202020', sleeve: 'long', coat: true,
