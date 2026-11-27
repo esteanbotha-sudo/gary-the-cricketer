@@ -194,6 +194,18 @@ const LOOKS = {
     shirt: '#f7f5ee', accent: '#0b5a31', trousers: '#f7f5ee', skin: '#efc39b', hair: '#3b2a1c',
     head: 'cap', capColor: '#0b5a31', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'long',
   },
+  maxwell: {
+    shirt: '#f6c531', accent: '#0b5a31', trousers: '#f6c531', skin: '#efc39b', hair: '#6b4a2b',
+    head: 'helmet', capColor: '#0b5a31', pads: true, gloves: '#f4f4f0', shoes: '#f4f4f0', sleeve: 'long', beard: true,
+  },
+  maxwellCap: {
+    shirt: '#f6c531', accent: '#0b5a31', trousers: '#f6c531', skin: '#efc39b', hair: '#6b4a2b',
+    head: 'cap', capColor: '#0b5a31', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'short', beard: true,
+  },
+  physio: {
+    shirt: '#e2283c', accent: '#ffffff', trousers: '#1b2a4a', skin: '#e0b08a', hair: '#3b2a1c',
+    head: 'cap', capColor: '#e2283c', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'short',
+  },
   umpire: {
     shirt: '#fbfbf7', accent: '#2a2f3a', trousers: '#2b2f38', skin: '#f0c9a4', hair: '#bdbdbd',
     head: 'hat', capColor: '#fbfbf7', pads: false, gloves: null, shoes: '#202020', sleeve: 'long', coat: true,

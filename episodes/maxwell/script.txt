@@ -1,0 +1,40 @@
+= Two hundred and one => 201
+= two thousand and twenty-three => 2023
+= two hundred and one not out => 201 not out
+= two hundred and ninety-two => 292
+= ninety-one for seven => 91 for 7
+= forty => 40
+= Forty => 40
+{title} Glenn Maxwell. @0.35
+{show} The Big Show. @0.45
+{chaos} Switch hits, | reverse sweeps, | and total chaos. | You never know what he'll do next. @0.45
+{today} Today, | Gary is going full Maxwell. @0.5
+{nobody} Nobody knows what he'll do next either. | Including Gary. @0.9
+{n5} Number five. @0.25
+The switch hit. @0.35
+{n5s} The bowler runs in. | Maxwell swaps his feet, | swaps his hands, | and hits it left handed | for six. @0.45
+{n5gary} Gary swaps his feet. @0.7
+{n5wrong} Then swaps them back. | Then forgets which is which. @1.0
+{n4} Number four. @0.25
+The fielding. @0.35
+{n4s} Diving catches, | flying run outs, | and boundary saves | that shouldn't be possible. @0.45
+{n4gary} Gary dives on the boundary. @0.7
+{n4rope} He takes the rope with him. @1.0
+{n3} Number three. @0.25
+The reverse sweep. @0.35
+{n3s} Down on one knee, | bat turned round, | and the ball flies the wrong way | for four. @0.45
+{n3gary} Gary reverse sweeps. @0.7
+{n3self} He reverse sweeps himself | onto the ground. @1.0
+{n2} Number two. @0.25
+Forty balls. @0.35
+{n2s} Delhi, | two thousand and twenty-three. | Against the Netherlands, | Maxwell smashes a hundred | off just forty balls. | The fastest in World Cup history. @0.45
+{n2gary} Gary also faced forty balls. @0.7
+{n2leave} He left all of them. @1.0
+{n1} And number one. @0.25
+Two hundred and one. @0.35
+{n1s} Mumbai, | two thousand and twenty-three. | Australia are ninety-one for seven, | chasing two hundred and ninety-two. | Maxwell has cramp, | can barely move his feet, | and still smashes two hundred and one not out | to win the game. @0.45
+{n1gary} Gary also has cramp. @0.7
+{n1warmup} From the warm-up. @0.4
+{n1physio} The physio carries him off. @1.0
+{outro} Glenn Maxwell is the Big Show. @0.5
+{gary2} Gary is | the side show. @1.6
