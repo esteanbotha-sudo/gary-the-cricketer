@@ -237,6 +237,25 @@ elif ep == 'maxwell':
     a(98.9, 'boing'); a(T['n1physio'], 'whoosh', 'ding'); a(T['n1physio'] + 0.3, 'groan')
     a(T['outro'] + 0.2, 'pop'); a(T['gary2'] + 0.6, 'pop'); a(T['gary2'] + 1.2, 'thud', 'boing')
     sections = [[0, 'intro'], [T['n5'] - 0.5, 'full'], [T['outro'] - 0.3, 'full']]
+elif ep == 'rohit':
+    a(T['hitman'], 'thud', 'cheer'); a(T['today'], 'swish'); a(T['nap'] + 1.4, 'boing')
+    a(17.9, 'bat', 'riser', 'hit'); a(18.0, 'bigcheer'); a(18.6, 'thud')
+    a(21.6, 'swish'); a(21.75, 'catch'); a(T['n5muscle'], 'boing', 'ding', 'groan')
+    a(30.6, 'whoosh'); a(33.0, 'bat', 'cheer')
+    a(36.0, 'catch'); a(38.85, 'swish', 'riser', 'hit', 'ding'); a(39.0, 'groan')
+    a(45.5, 'riser'); a(47.2, 'hit', 'bigcheer')
+    a(51.4, 'bat'); a(51.9, 'thud'); a(53.1, 'stumps', 'riser', 'hit', 'ding'); a(53.3, 'groan')
+    for i in range(3): a(58.9 + i * 0.5, 'thud')
+    a(59.0, 'bigcheer'); a(61.4, 'riser', 'hit')
+    for i in range(3): a(64.8 + i * 0.4, 'pop')
+    a(T['n2before'], 'boing', 'ding', 'groan')
+    per = 5.0 / 16
+    for i in range(16): a(77.6 + i * per + 0.5 * per, 'bat')
+    a(77.6, 'bigcheer'); a(82.8, 'riser', 'hit', 'bigcheer')
+    for k in (89.47, 90.65, 91.21): a(k, 'pop')
+    a(T['n1extras'], 'riser', 'hit', 'ding', 'groan')
+    a(T['outro'] + 0.2, 'pop'); a(T['gary2'], 'swish', 'boing')
+    sections = [[0, 'intro'], [T['n5'] - 0.5, 'full'], [T['outro'] - 0.3, 'outro']]
 else:
     a(T['king'], 'thud', 'cheer'); a(T['studied'], 'swish'); a(T['see'] + 0.2, 'pop')
     tc, tf = T['n5vk'] + 0.15, T['n5vk'] + 1.95

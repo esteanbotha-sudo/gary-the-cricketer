@@ -9,14 +9,13 @@ then "GARY'S TURN" and Gary fails comically, and the "TIMES GARY FAILED" counter
 About 90–100 s of narration, Kokoro `bm_george` voice, shared high-energy soundtrack.
 
 ## Up next
-1. Rohit Sharma: 264, the pull shot, three ODI double hundreds, lazy elegance, sixes
-2. Steve Smith: the fidgety leave, unorthodox technique, Ashes runs, catches, concentration
-3. Jimmy Anderson: swing, 700 Test wickets, the wobble-seam, longevity, accuracy
-4. Rashid Khan: googly, quick leg-spin, the snake shot, T20 dominance, fielding
-5. Ellyse Perry: all-rounder, pace bowling, run-scoring, fielding, two-sport star
-6. Kagiso Rabada: pace, the celebration, yorkers, wicket bursts, youngest records
-7. Jos Buttler: ramps and scoops, finishing, keeping, fastest hundreds, 360 hitting
-8. Babar Azam: cover drive, consistency, captaincy, elegance, quick hundreds
+1. Steve Smith: the fidgety leave, unorthodox technique, Ashes runs, catches, concentration
+2. Jimmy Anderson: swing, 700 Test wickets, the wobble-seam, longevity, accuracy
+3. Rashid Khan: googly, quick leg-spin, the snake shot, T20 dominance, fielding
+4. Ellyse Perry: all-rounder, pace bowling, run-scoring, fielding, two-sport star
+5. Kagiso Rabada: pace, the celebration, yorkers, wicket bursts, youngest records
+6. Jos Buttler: ramps and scoops, finishing, keeping, fastest hundreds, 360 hitting
+7. Babar Azam: cover drive, consistency, captaincy, elegance, quick hundreds
 
 ## Done
 - The Best Wickets in Cricket: `output/gary-wickets.mp4`
@@ -34,3 +33,4 @@ About 90–100 s of narration, Kokoro `bm_george` voice, shared high-energy soun
 - 2026-11-25 Muttiah Muralitharan: `output/gary-murali.mp4`
 - 2026-11-26 Jacques Kallis: `output/gary-kallis.mp4`
 - 2026-11-27 Glenn Maxwell: `output/gary-maxwell.mp4`
+- 2026-11-28 Rohit Sharma: `output/gary-rohit.mp4`

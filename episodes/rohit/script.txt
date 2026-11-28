@@ -1,0 +1,40 @@
+= Two six four => 264
+= two hundred and sixty-four => 264
+= two thousand and fourteen => 2014
+= two thousand and twenty-three => 2023
+= one hundred and seventy-three => 173
+= sixteen => 16
+{title} Rohit Sharma. @0.35
+{hitman} The Hitman. @0.45
+{lazy} He makes batting look so easy, | it's almost lazy. @0.45
+{today} Today, | Gary is batting like Rohit. @0.5
+{nap} After a quick nap. @0.9
+{n5} Number five. @0.25
+The pull shot. @0.35
+{n5s} A short ball, | and Rohit swivels, | and pulls it | into the crowd. @0.45
+{n5gary} Gary pulls too. @0.7
+{n5muscle} He pulls a muscle. @1.0
+{n4} Number four. @0.25
+All the time in the world. @0.35
+{n4s} Rohit always seems to have extra time. | He waits, | and waits, | then places it in the gap. @0.45
+{n4gary} Gary also waits. @0.7
+{n4keeper} The ball is already in the keeper's gloves. @1.0
+{n3} Number three. @0.25
+The sixes. @0.35
+{n3s} In two thousand and twenty-three, | Rohit passed Chris Gayle | for the most sixes in international cricket. @0.45
+{n3gary} Gary hits a six too. @0.7
+{n3own} Into his own kit bag. @1.0
+{n2} Number two. @0.25
+The double hundreds. @0.35
+{n2s} Three double hundreds in one-day cricket. | No one else has ever made three. @0.45
+{n2gary} Gary has three doubles too. @0.7
+{n2coffee} Double espressos. @0.4
+{n2before} Before breakfast. @1.0
+{n1} And number one. @0.25
+Two six four. @0.35
+{n1s} Kolkata, | two thousand and fourteen. | Against Sri Lanka, | Rohit scores two hundred and sixty-four | off one hundred and seventy-three balls. | The highest score in one-day international history. @0.45
+{n1gary} Gary's highest score. @0.7
+{n1digit} Also has a two, | a six, | and a four in it. @0.4
+{n1extras} Extras. @1.0
+{outro} Rohit Sharma is the Hitman. @0.5
+{gary2} Gary is | the Missman. @1.6

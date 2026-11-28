@@ -206,6 +206,18 @@ const LOOKS = {
     shirt: '#e2283c', accent: '#ffffff', trousers: '#1b2a4a', skin: '#e0b08a', hair: '#3b2a1c',
     head: 'cap', capColor: '#e2283c', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'short',
   },
+  rohit: {
+    shirt: '#2a7de1', accent: '#ff8a1f', trousers: '#1b3f8f', skin: '#c98d62', hair: '#1a120c',
+    head: 'helmet', capColor: '#16336e', pads: true, gloves: '#f4f4f0', shoes: '#f4f4f0', sleeve: 'long', beard: true,
+  },
+  rohitCap: {
+    shirt: '#2a7de1', accent: '#ff8a1f', trousers: '#1b3f8f', skin: '#c98d62', hair: '#1a120c',
+    head: 'cap', capColor: '#16336e', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'short', beard: true,
+  },
+  slBowler: {
+    shirt: '#1b3f8f', accent: '#f6c531', trousers: '#1b3f8f', skin: '#8a5a3a', hair: '#120c08',
+    head: 'cap', capColor: '#16336e', pads: false, gloves: null, shoes: '#f4f4f0', sleeve: 'short',
+  },
   umpire: {
     shirt: '#fbfbf7', accent: '#2a2f3a', trousers: '#2b2f38', skin: '#f0c9a4', hair: '#bdbdbd',
     head: 'hat', capColor: '#fbfbf7', pads: false, gloves: null, shoes: '#202020', sleeve: 'long', coat: true,
